@@ -110,9 +110,9 @@
 </script>
 
 <div class="w-full overflow-hidden">
-	<div id="textbox-container" class="hidden">
-		<div>
-			<p id="dialogue">Hi</p>
+	<div id="textbox-container" class="hidden  top-[42%] left-[42%]">
+		<div class="card p-3 border-2 right-1/2 bottom-1/2">
+			<p id="dialogue" class="w-52 h-32">Hi</p>
 			<div>
 				<button id="closeBtn">Close</button>
 			</div>
