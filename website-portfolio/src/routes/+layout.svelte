@@ -1,16 +1,34 @@
 <script lang="ts">
 	import '../app.css'
-	import { ModeWatcher, toggleMode } from 'mode-watcher'
+	import { ModeWatcher, toggleMode, mode } from 'mode-watcher'
 	import { Toaster } from "$lib/components/ui/sonner";
   	import { Switch } from '$lib/components/ui/switch';
+	import { Separator } from '$lib/components/ui/separator';
+	import { page } from "$app/stores"
 
 	let toggled = false
-
 	$: {
 		if (toggled) {}
 	 	toggleMode() 
 	}
 	toggleMode()
+
+	
+	$: currentPath = $page.url.pathname
+	$: textColor = $mode === "dark" ? "text-gray-400" : "text-gray-400"
+	$: highlightedTextColor = $mode === "dark" ? "text-white" : "text-black"
+	let aboutColor = textColor
+	let notesColor = textColor
+	let projectsColor = textColor
+
+	$: {
+		if (currentPath === "/") { aboutColor = highlightedTextColor }
+		else { aboutColor = textColor }
+		if (currentPath === "/notes") { notesColor = highlightedTextColor }
+		else { notesColor = textColor }
+		if (currentPath === "/projects") { projectsColor = highlightedTextColor }
+		else { projectsColor = textColor }
+	}
 </script>
 
 <Toaster />
@@ -19,12 +37,13 @@
 	<Switch bind:checked={toggled}/>
 </div>
 <div class="flex w-full">
-	<div class="w-1/2 flex flex-col items-center pt-10">
+	<div class="w-1/3 flex flex-col items-center pt-10 italic">
 		<div class="flex flex-col text-right gap-3">
-			<a href="/">about</a>
-			<a href="/notes">notes</a>
-			<a href="/projects">projects</a>
+			<a href="/" class={aboutColor}>about</a>
+			<a href="/notes" class={notesColor}>notes</a>
+			<a href="/projects" class={projectsColor}>projects</a>
 		</div>
 	</div>
+	<Separator orientation="vertical" />
 	<slot />
 </div>	
