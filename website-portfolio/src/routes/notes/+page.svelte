@@ -47,7 +47,7 @@
             "text": "Atomic Habits reframed the way I think about self-improvement. Instead of obsessing over distant goals, the book emphasizes the power of systems—small, consistent changes that compound over time. This mindset applies directly to programming and learning: rather than 'mastering' a language or concept, the focus should be on refining my daily process. Whether it’s writing, coding, or fitness, habits shape identity. This blog itself is a system—a place to regularly document progress, ensuring that learning isn’t just consumed but actively reinforced."
         },
         {
-            "title": "Demystifying Zero-Knowledge Proofs",
+            "title": "What are ZK Proofs?",
             "date": "10 DEC 2024",
             "text": "Zero-knowledge proofs (ZKPs) initially seemed like magic—how can you prove something without revealing the information itself? Breaking it down, I realized it's all about trust minimization. ZKPs allow one party to prove they know a secret (like a password) without exposing it. The applications are massive: cryptographic authentication, privacy in blockchains, and even real-world identity verification. One of the most fascinating examples is zk-SNARKs, which power private transactions in Zcash. I’m still diving deeper, but it’s clear ZKPs will play a big role in the future of security and cryptography."
         },
@@ -57,7 +57,7 @@
             "text": "Diving into Swift and SwiftUI felt like stepping into a polished, streamlined world of app development. Swift’s strong typing and safety features make it feel like a modern mix of Python and Rust, while SwiftUI is declarative and intuitive. The way it handles state management reminds me of React, but with Apple’s tight integration into the ecosystem. My biggest takeaway so far? Apple’s approach makes it incredibly easy to build visually appealing apps with minimal boilerplate, but the learning curve comes from understanding Swift’s nuances, like optionals and protocol-oriented programming."
         },
         {
-            title: "Understanding Options Terminology: A Mental Model",
+            title: "Understanding Options Terminology",
             date: "20 OCT 2024",
             text: `Options trading comes with its own dense jargon—calls, puts, greeks, IV crush—but breaking it down makes it more digestible.
 
@@ -121,8 +121,8 @@ Understanding **implied volatility (IV)** is crucial: an overpriced option can l
             {:else}
                 {#each notes as note}
                 <button class="flex w-full justify-between {$mode === "light" ? "hover:text-gray-900" : "hover:text-gray-100"}" onclick={() => handleSelectNote(note)}>
-                    <p>{note.title}</p>
-                    <p>{note.date}</p>
+                    <p class="text-left">{note.title}</p>
+                    <p class="text-right">{note.date}</p>
                 </button>
                 {/each}
             {/if}
