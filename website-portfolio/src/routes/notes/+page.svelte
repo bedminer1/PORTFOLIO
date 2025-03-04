@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { onMount, afterUpdate } from "svelte";
+    import { onMount } from "svelte";
     import { mode } from "mode-watcher"
     import { marked } from "marked"
     import hljs from "highlight.js";
@@ -16,8 +16,8 @@
         text: string
     }
 
-    let noteReadingMode = false
-    let selectedNote: Note | undefined = undefined
+    let noteReadingMode = $state(false)
+    let selectedNote: Note | undefined = $state(undefined)
     let notes: Note[] = [
         {
             "title": "Why Be a Knowledge Broker?",
@@ -75,15 +75,11 @@ Understanding **implied volatility (IV)** is crucial: an overpriced option can l
         selectedNote = undefined
     }
 
-    function applySyntaxHighlighting() {
-        document.querySelectorAll("pre code").forEach((block) => {
-            hljs.highlightElement(block as HTMLElement);
-        });
-    }
-
-    onMount(applySyntaxHighlighting);
-    afterUpdate(applySyntaxHighlighting);
-
+    let htmlContent = ""
+    $effect(() => {
+        htmlContent = marked(selectedNote?.text ?? "") as string
+        hljs.highlightAll();
+    });
 </script>
 
 <div class="w-full flex flex-col justify-center pl-4 gap-10">
