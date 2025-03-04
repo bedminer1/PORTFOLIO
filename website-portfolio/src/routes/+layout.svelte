@@ -33,11 +33,11 @@
 
 <Toaster />
 <ModeWatcher />
-<div class="p-2 mb-20 w-full justify-end flex">
+<div class="p-2 mb-4 w-full justify-end flex">
 	<Switch bind:checked={toggled}/>
 </div>
 <div class="flex w-full font-serif">
-	<div class="w-1/3 flex flex-col items-center pt-10 italic">
+	<div class="w-1/4 flex flex-col items-center pt-10 italic">
 		<div class="flex flex-col text-right gap-3">
 			<a href="/" class={aboutColor}>about</a>
 			<a href="/notes" class={notesColor}>notes</a>

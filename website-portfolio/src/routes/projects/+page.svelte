@@ -11,7 +11,7 @@
             </p>
             <br>
             <p>
-                Some other hobbies include jamming out jazz solos on the trumpet, playing ADC on Wildrift with my support duo, and working on post moves to bust out at Sunday morning basketball pick-up. 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus commodi ea aperiam recusandae modi aspernatur quo doloremque natus consectetur! Omnis id, quasi unde esse a nobis ullam delectus voluptas facilis!
             </p>
             <br>
             <p>
