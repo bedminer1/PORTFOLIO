@@ -1,14 +1,31 @@
 <script lang="ts">
-    import { onMount } from "svelte";
     import { mode } from "mode-watcher"
     import { marked } from "marked"
     import hljs from "highlight.js";
     import javascript from 'highlight.js/lib/languages/javascript';
     import python from 'highlight.js/lib/languages/python';
-    import "highlight.js/styles/github-dark.css";
+  import { parse } from "svelte/compiler";
 
     hljs.registerLanguage('javascript', javascript);
     hljs.registerLanguage('python', python);
+
+    $effect(() => {
+        if ($mode) {}
+        const existingLink = document.getElementById("hljs-theme");
+
+        if (existingLink) {
+            existingLink.remove();
+        }
+
+        const link = document.createElement("link");
+        link.id = "hljs-theme";
+        link.rel = "stylesheet";
+        link.href = $mode === "light"
+            ? "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github.min.css"
+            : "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css";
+
+        document.head.appendChild(link)
+    })
 
     interface Note {
         title: string
@@ -42,8 +59,7 @@
         {
             title: "Understanding Options Terminology: A Mental Model",
             date: "20 OCT 2024",
-            text: `
-Options trading comes with its own dense jargon—calls, puts, greeks, IV crush—but breaking it down makes it more digestible.
+            text: `Options trading comes with its own dense jargon—calls, puts, greeks, IV crush—but breaking it down makes it more digestible.
 
 ### Basics of Options
 - **Call Option**: The right to buy at a specific price.
@@ -61,25 +77,34 @@ function calculateOptionPrice(strikePrice, currentPrice) {
 Understanding **implied volatility (IV)** is crucial: an overpriced option can lose value even when the stock moves in the expected direction.
 `
         }
-
     ]
-
 
     function handleSelectNote(note: Note) {
         noteReadingMode = true
-        selectedNote = note
+
+        let tempText = note.text
+            .replace(/\n\n/g, " @@BR@@\n")
+            .replace(/``` (?!\n)/g, "```\n")
+        let parsedHtml = marked(tempText, { gfm: true, breaks: false }) as string
+        parsedHtml = parsedHtml.replace(/(<pre>[\s\S]*?<\/pre>)|@@BR@@/g, (match, preBlock) => {
+            return preBlock ? preBlock : "<br><br>";
+        });
+
+
+        selectedNote = {
+            ...note,
+            text: parsedHtml
+        }
+
+        setTimeout(() => { // wait for marked to parse markdown
+            hljs.highlightAll()
+        }, 10)
     }
 
     function handleUnselectNote() {
         noteReadingMode = false
         selectedNote = undefined
     }
-
-    let htmlContent = ""
-    $effect(() => {
-        htmlContent = marked(selectedNote?.text ?? "") as string
-        hljs.highlightAll();
-    });
 </script>
 
 <div class="w-full flex flex-col justify-center pl-4 gap-10">
@@ -88,7 +113,7 @@ Understanding **implied volatility (IV)** is crucial: an overpriced option can l
             {#if noteReadingMode}
                 <div class="pt-10">
                     <h1 class="text-xl mb-4 {$mode === "light" ? "text-gray-800" : "text-gray-200"}">{selectedNote!.title}</h1>
-                    <p class="prose prose-lg dark:prose-invert w-full [&_code]:text-sm">{@html marked(selectedNote!.text)}</p>
+                    <p class="w-full [&_code]:text-sm">{@html selectedNote?.text}</p>
                     <div class="flex w-full justify-end">
                         <button class={$mode === "light" ? "hover:text-gray-900" : "hover:text-gray-100"} onclick={handleUnselectNote}>&larr; Back</button>
                     </div>
