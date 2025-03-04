@@ -108,7 +108,7 @@ Understanding **implied volatility (IV)** is crucial: an overpriced option can l
 </script>
 
 <div class="w-full flex flex-col justify-center pl-4 gap-10">
-    <div class="w-3/4">
+    <div class="w-full pr-4">
         <div class={$mode === "light" ? "text-gray-500" : "text-gray-400"}>
             {#if noteReadingMode}
                 <div class="pt-10">
