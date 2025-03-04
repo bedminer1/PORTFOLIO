@@ -15,7 +15,7 @@
             </p>
             <br>
             <p>
-                If any of my <a class="underline" href="/projects">projects</a>, <a class="underline" href="/notes">notes</a>, or hobbies seem interesting, I'm always down to talk — feel free to reach out on <a target="_blank" class="underline" href="https://x.com/bedminer1">Twitter</a> or <a target="_blank" class="underline" href="https://www.linkedin.com/in/alexander-seah-4a23622b5/">LinkedIn</a>!
+                If my <a class="underline" href="/projects">projects</a>, <a class="underline" href="/notes">notes</a>, or hobbies seem interesting, I'm always down to talk — feel free to reach out on <a target="_blank" class="underline" href="https://x.com/bedminer1">Twitter</a> or <a target="_blank" class="underline" href="https://www.linkedin.com/in/alexander-seah-4a23622b5/">LinkedIn</a>!
             </p>
         </div>
     </div>

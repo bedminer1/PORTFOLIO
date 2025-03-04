@@ -1,10 +1,19 @@
 <script lang="ts">
+    import { onMount, afterUpdate } from "svelte";
     import { mode } from "mode-watcher"
+    import { marked } from "marked"
+    import hljs from "highlight.js";
+    import javascript from 'highlight.js/lib/languages/javascript';
+    import python from 'highlight.js/lib/languages/python';
+    import "highlight.js/styles/github-dark.css";
+
+    hljs.registerLanguage('javascript', javascript);
+    hljs.registerLanguage('python', python);
 
     interface Note {
-        title: String
-        date: String
-        text: String
+        title: string
+        date: string
+        text: string
     }
 
     let noteReadingMode = false
@@ -31,10 +40,28 @@
             "text": "Diving into Swift and SwiftUI felt like stepping into a polished, streamlined world of app development. Swift’s strong typing and safety features make it feel like a modern mix of Python and Rust, while SwiftUI is declarative and intuitive. The way it handles state management reminds me of React, but with Apple’s tight integration into the ecosystem. My biggest takeaway so far? Apple’s approach makes it incredibly easy to build visually appealing apps with minimal boilerplate, but the learning curve comes from understanding Swift’s nuances, like optionals and protocol-oriented programming."
         },
         {
-            "title": "Options Dictionary",
-            "date": "20 OCT 2024",
-            "text": "Options trading comes with its own dense jargon—calls, puts, greeks, IV crush—but breaking it down makes it more digestible. At its core, an option is just a contract to buy or sell something at a set price before a deadline. Calls are for buying, puts are for selling. The 'Greeks' measure risk: Delta tracks price movement, Theta deals with time decay, and Vega relates to volatility. The biggest mistake beginners make? Not understanding how implied volatility (IV) affects pricing—an overpriced option can lose value even when the stock moves in the expected direction."
+            title: "Understanding Options Terminology: A Mental Model",
+            date: "20 OCT 2024",
+            text: `
+Options trading comes with its own dense jargon—calls, puts, greeks, IV crush—but breaking it down makes it more digestible.
+
+### Basics of Options
+- **Call Option**: The right to buy at a specific price.
+- **Put Option**: The right to sell at a specific price.
+
+### Example Code
+\`\`\`javascript
+// Simple options calculation 
+function calculateOptionPrice(strikePrice, currentPrice) {
+    let optionPrice = strikePrice - currentPrice
+    return optionPrice
+}
+\`\`\`
+
+Understanding **implied volatility (IV)** is crucial: an overpriced option can lose value even when the stock moves in the expected direction.
+`
         }
+
     ]
 
 
@@ -47,6 +74,16 @@
         noteReadingMode = false
         selectedNote = undefined
     }
+
+    function applySyntaxHighlighting() {
+        document.querySelectorAll("pre code").forEach((block) => {
+            hljs.highlightElement(block as HTMLElement);
+        });
+    }
+
+    onMount(applySyntaxHighlighting);
+    afterUpdate(applySyntaxHighlighting);
+
 </script>
 
 <div class="w-full flex flex-col justify-center pl-4 gap-10">
@@ -55,9 +92,9 @@
             {#if noteReadingMode}
                 <div class="pt-10">
                     <h1 class="text-xl mb-4 {$mode === "light" ? "text-gray-800" : "text-gray-200"}">{selectedNote!.title}</h1>
-                    <p>{selectedNote!.text}</p>
+                    <p class="prose prose-lg dark:prose-invert w-full [&_code]:text-sm">{@html marked(selectedNote!.text)}</p>
                     <div class="flex w-full justify-end">
-                        <button onclick={handleUnselectNote}>&larr;</button>
+                        <button class={$mode === "light" ? "hover:text-gray-900" : "hover:text-gray-100"} onclick={handleUnselectNote}>&larr; Back</button>
                     </div>
                 </div>
             {:else}
