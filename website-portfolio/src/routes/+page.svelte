@@ -1,10 +1,14 @@
 <script lang="ts">
     import { mode } from "mode-watcher"
+    import pfp from "$lib/assets/githubpfpcircle.png"
 </script>
 
 <div class="w-full flex flex-col justify-center pl-4 gap-10">
     <div class="w-3/4">
-        <h1 class="text-xl mb-10">Alexander Seah</h1>
+        <div class="flex justify-between mb-10 items-center">
+            <h1 class="text-xl">Alexander Seah</h1>
+            <img class="w-20 border-2 border-black" src={pfp} alt="profile">
+        </div>
         <div class={$mode === "light" ? "text-gray-600" : "text-gray-300"}>
             <p>
                 I'm a developer based in Singapore. I like making tools to solve my own pain points, mostly using 'simple' (but productive) languages like Go and Svelte. 

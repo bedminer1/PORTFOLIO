@@ -42,7 +42,7 @@
             <div class="flex flex-col gap-8">
                 {#each projects as project}
                 <div>
-                    <h1 class="bold mb-2"><a href={project.link}>{project.title}</a></h1>
+                    <h1 class="bold mb-2"><a href={project.link} target="_blank">{project.title}</a></h1>
                     <p class={$mode === "light" ? "text-gray-600" : "text-gray-400"}>{project.description}</p>
                 </div>
                 {/each}
