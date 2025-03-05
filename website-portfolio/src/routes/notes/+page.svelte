@@ -101,7 +101,7 @@ Progress compounds over time, and the real challenge is staying in the game long
     <div class="w-full pr-4">
         <div class={$mode === "light" ? "text-gray-500" : "text-gray-400"}>
             {#if noteReadingMode}
-                <div class="pt-10 pr-20">
+                <div class="pt-10 pr-4 md:pr-20">
                     <h1 class="text-xl mb-4 {$mode === "light" ? "text-gray-800" : "text-gray-200"}">{selectedNote!.title}</h1>
                     <p class="w-full mb-10 [&_code]:text-sm {$mode === "light" ? "text-gray-600" : "text-gray-400"}">{@html selectedNote?.text}</p>
                     <div class="flex w-full justify-end">
