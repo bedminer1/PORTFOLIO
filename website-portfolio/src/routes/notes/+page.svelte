@@ -4,11 +4,14 @@
     import hljs from "highlight.js";
     import javascript from 'highlight.js/lib/languages/javascript';
     import python from 'highlight.js/lib/languages/python';
-  import { parse } from "svelte/compiler";
+    import go from 'highlight.js/lib/languages/go';
 
+    // register languages for syntax highlighting
     hljs.registerLanguage('javascript', javascript);
     hljs.registerLanguage('python', python);
+    hljs.registerLanguage('go', go);
 
+    // changing code block style based on light/dark mode
     $effect(() => {
         if ($mode) {}
         const existingLink = document.getElementById("hljs-theme");
@@ -39,7 +42,14 @@
         {
             "title": "Why Be a Knowledge Broker?",
             "date": "27 FEB 2025",
-            "text": "One of the key ideas in Never Eat Alone is that successful people don’t just collect knowledge; they share it. The concept of being a knowledge broker resonated with me—curating, connecting, and distributing valuable insights not just to build relationships but to create an ecosystem of learning. This website is my attempt at that: a library of ideas, a space to document my thoughts, projects, and lessons learned. The goal isn’t just self-improvement but to provide others with a structured, accessible way to gain insight from my journey."
+            "text": `**Knowledge Brokers**
+In _Never Eat Alone_, the author introduces the concept of _knowledge brokers_—people who curate, connect, and distribute valuable insights. He describes it as a relationship-building system: you start with one friend and one problem, but over time, you become a hub of interconnected people and solutions.
+
+**An Example**
+In _Never Eat Alone_, the author shares a story about a duffle bag entrepreneur struggling with marketing. A mutual connection introduces him to a Reebok executive, who provides insights into branding and distribution. In return, the entrepreneur shares his knowledge of manufacturing and design, helping the executive refine Reebok’s bag line. Both walk away with valuable takeaways, and the mutual contact strengthens their network by facilitating the exchange.
+
+**My Attempt**
+This website is my own attempt at being a knowledge broker—a library of ideas, a space to document my thoughts, projects, and lessons learned. It’s not just a trophy case of past work but a living resource where others can tap into insights I’ve stumbled upon. By sharing knowledge openly, I hope to spark new ideas, help others navigate challenges, and create a space for continuous learning and collaboration.`
         },
         {
             "title": "Building Systems, Not Goals",
@@ -73,7 +83,6 @@ function calculateOptionPrice(strikePrice, currentPrice) {
     return optionPrice
 }
 \`\`\`
-
 Understanding **implied volatility (IV)** is crucial: an overpriced option can lose value even when the stock moves in the expected direction.
 `
         }
@@ -85,7 +94,7 @@ Understanding **implied volatility (IV)** is crucial: an overpriced option can l
         let tempText = note.text
             .replace(/\n\n/g, " @@BR@@\n")
             .replace(/``` (?!\n)/g, "```\n")
-        let parsedHtml = marked(tempText, { gfm: true, breaks: false }) as string
+        let parsedHtml = marked(tempText, { gfm: true, breaks: true }) as string
         parsedHtml = parsedHtml.replace(/(<pre>[\s\S]*?<\/pre>)|@@BR@@/g, (match, preBlock) => {
             return preBlock ? preBlock : "<br><br>";
         });
@@ -111,9 +120,9 @@ Understanding **implied volatility (IV)** is crucial: an overpriced option can l
     <div class="w-full pr-4">
         <div class={$mode === "light" ? "text-gray-500" : "text-gray-400"}>
             {#if noteReadingMode}
-                <div class="pt-10">
+                <div class="pt-10 pr-20">
                     <h1 class="text-xl mb-4 {$mode === "light" ? "text-gray-800" : "text-gray-200"}">{selectedNote!.title}</h1>
-                    <p class="w-full [&_code]:text-sm">{@html selectedNote?.text}</p>
+                    <p class="w-full mb-10 [&_code]:text-sm {$mode === "light" ? "text-gray-600" : "text-gray-400"}">{@html selectedNote?.text}</p>
                     <div class="flex w-full justify-end">
                         <button class={$mode === "light" ? "hover:text-gray-900" : "hover:text-gray-100"} onclick={handleUnselectNote}>&larr; Back</button>
                     </div>
@@ -129,3 +138,7 @@ Understanding **implied volatility (IV)** is crucial: an overpriced option can l
         </div>
     </div>
 </div>
+
+<style>
+
+</style>
