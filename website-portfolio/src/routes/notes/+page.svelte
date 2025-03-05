@@ -41,7 +41,7 @@
     let notes: Note[] = [
         {
             "title": "Why Be a Knowledge Broker?",
-            "date": "27 FEB 2025",
+            "date": "5 MAR 2025",
             "text": `**Knowledge Brokers**
 In _Never Eat Alone_, the author introduces the concept of _knowledge brokers_—people who curate, connect, and distribute valuable insights. He describes it as a relationship-building system: you start with one friend and one problem, but over time, you become a hub of interconnected people and solutions.
 

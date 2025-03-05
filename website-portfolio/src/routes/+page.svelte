@@ -11,7 +11,7 @@
             </p>
             <br>
             <p>
-                Some other hobbies include jamming out jazz solos on the trumpet, playing ADC on Wildrift with my support duo, and working on post moves to bust out at Sunday morning basketball pick-up. 
+                Some other hobbies include jamming out jazz <a class="underline" target="_blank" href="https://www.youtube.com/watch?v=gJ9WBYmSO4w&list=PLxe0KcilTZ5BJYFjTUjZTkvazRwZSAAb7&pp=gAQB">solos on the trumpet</a>, playing ADC on Wildrift with my support duo, and working on post moves to bust out at Sunday morning basketball pick-up. 
             </p>
             <br>
             <p>
