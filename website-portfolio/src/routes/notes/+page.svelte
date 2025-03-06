@@ -49,7 +49,7 @@ In _Never Eat Alone_, the author introduces the concept of _knowledge brokers_�
 In _Never Eat Alone_, the author shares a story about a duffle bag entrepreneur struggling with marketing. A mutual connection introduces him to a Reebok executive, who provides insights into branding and distribution. In return, the entrepreneur shares his knowledge of manufacturing and design, helping the executive refine Reebok’s bag line. Both walk away with valuable takeaways, and the mutual contact strengthens their network by facilitating the exchange.
 
 **My Attempt**
-This website is my own attempt at being a knowledge broker—a library of ideas, a space to document my thoughts, projects, and lessons learned. It’s not just a trophy case of past work but a living resource where others can tap into insights I’ve stumbled upon. By sharing knowledge openly, I hope to spark new ideas, help others navigate challenges, and create a space for continuous learning and collaboration.`
+This website is my own attempt at being a knowledge broker—a library of ideas, a space to document my thoughts, projects, and lessons learned. It’s not just a trophy case of past work but a living resource where others can tap into insights I’ve stumbled upon. However, I think one pitfall I have personally is that I spend too much time "tending to the garden" and not enough inviting others to come enjoy it too. It is a personal resolution to become more proactive in reaching out and engaging new connections.`
         },
         {
             "title": "Building Systems, Not Goals",
@@ -110,7 +110,7 @@ Progress compounds over time, and the real challenge is staying in the game long
                 </div>
             {:else}
                 {#each notes as note}
-                <button class="flex w-full justify-between {$mode === "light" ? "hover:text-gray-900" : "hover:text-gray-100"}" onclick={() => handleSelectNote(note)}>
+                <button class="flex w-full mb-1 justify-between {$mode === "light" ? "hover:text-gray-900" : "hover:text-gray-100"}" onclick={() => handleSelectNote(note)}>
                     <p class="text-left">{note.title}</p>
                     <p class="text-right">{note.date}</p>
                 </button>

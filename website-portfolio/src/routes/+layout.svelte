@@ -13,7 +13,6 @@
 	}
 	toggleMode()
 
-
 	$: currentPath = $page.url.pathname
 	$: textColor = $mode === "dark" ? "text-gray-400" : "text-gray-400"
 	$: highlightedTextColor = $mode === "dark" ? "text-white" : "text-black"

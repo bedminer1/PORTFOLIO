@@ -4,8 +4,8 @@
 </script>
 
 <div class="w-full flex flex-col justify-center pl-4 gap-10">
-    <div class="w-3/4">
-        <div class="flex justify-between mb-10 items-center">
+    <div class="w-full pr-3 md:w-3/4">
+        <div class="flex justify-between mb-5 items-center">
             <h1 class="text-xl">Alexander Seah</h1>
             <img class="w-20 border-2 border-black" src={pfp} alt="profile">
         </div>
