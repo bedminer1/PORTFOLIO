@@ -23,9 +23,9 @@
 	$: {
 		if (currentPath === "/") { aboutColor = highlightedTextColor }
 		else { aboutColor = textColor }
-		if (currentPath === "/notes") { notesColor = highlightedTextColor }
+		if (currentPath.substring(0, 6) === "/notes") { notesColor = highlightedTextColor }
 		else { notesColor = textColor }
-		if (currentPath === "/projects") { projectsColor = highlightedTextColor }
+		if (currentPath.substring(0, 9) === "/projects") { projectsColor = highlightedTextColor }
 		else { projectsColor = textColor }
 	}
 </script>
