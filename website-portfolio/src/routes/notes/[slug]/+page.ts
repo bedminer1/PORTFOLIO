@@ -4,19 +4,23 @@ interface Note {
     text: string
 }
 
+export const ssr = false
+
 export const load = ({ params }) => {
     for (let note of notes) {
         if (note.title === params.slug) {
             return {
                 title: note.title,
-                text: note.text
+                text: note.text,
+                date: note.date,
             }
         }
     }
     
     return {
-        title: "Note '" + params.slug + "' not found",
-        text: "You're not suppose to be here.."
+        title: "'" + params.slug + "' note doesn't exist :(",
+        text: "",
+        date: "",
     }
 }
 
@@ -28,7 +32,7 @@ let notes: Note[] = [
 In _Never Eat Alone_, the author introduces the concept of _knowledge brokers_—people who curate, connect, and distribute valuable insights. He describes it as a relationship-building system: you start with one friend and one problem, but over time, you become a hub of interconnected people and solutions.
 
 **An Example**
-In _Never Eat Alone_, the author shares a story about a duffle bag entrepreneur struggling with marketing. A mutual connection introduces him to a Reebok executive, who provides insights into branding and distribution. In return, the entrepreneur shares his knowledge of manufacturing and design, helping the executive refine Reebok’s bag line. Both walk away with valuable takeaways, and the mutual contact strengthens their network by facilitating the exchange.
+The author shares a story about a duffle bag entrepreneur struggling with marketing. A mutual connection introduces him to a Reebok executive, who provides insights into branding and distribution. In return, the entrepreneur shares his knowledge of manufacturing and design, helping the executive refine Reebok’s bag line. Both walk away with valuable takeaways, and the mutual contact strengthens their network by facilitating the exchange.
 
 **My Attempt**
 This website is my own attempt at being a knowledge broker—a library of ideas, a space to document my thoughts, projects, and lessons learned. However, I think one pitfall I have personally fallen into is that I spend too much time "tending to the garden" and not enough inviting others to come enjoy it too. It is a personal resolution to become more proactive in reaching out and engaging new connections.`
@@ -48,5 +52,84 @@ A practical way to build better habits is through the framework of making them *
 **Show Up**
 Progress compounds over time, and the real challenge is staying in the game long enough to see results. Consistency matters more than intensity. The key is to **just show up**. Missing one day doesn’t mean failure, and not every session needs to be a breakthrough. Even on low-energy days, doing the bare minimum keeps the habit alive.`
     },
-    
+    {
+        "title": "Leetcode Interviewer Manual",
+        "date": "17 MAR 2025",
+        "text": `A close friend recently offered to be a mock interviewer for leetcode interview practice even though she doesn't have much experience with leetcode (yet). This guide was written for her to learn about the basics of leetcode, with tips for being a good interviewer. 
+
+**The Problem**
+The interviewer presents a programming problem, designed to test your ability to understand and define inputs, outputs, and constraints, design and implement step-by-step plans (algorithms) to solve the problem, and analyze the solution for it's efficiency. 
+
+For example, a simple problem might be *"Given an array of integers, return the sum of all elements."* You then need to write code(usually a function) that takes in any array of numbers, computes and returns the sum total.
+
+**Test Cases**
+They are a set of pre-computed inputs and outputs used to test if a solution is correct. For example, a test case for the previous question might be: 
+- Input: \`[1, 2, 3, 4, 5]\`
+
+- Output: \`15\`
+
+
+There are usually many test cases for one problem, maybe with edge cases with inputs at the boundaries of a problem's constraints (e.g empty arrays, negative numbers, large number on inputs).
+
+*Interviewer Tip:* When observing me, listen for how thoroughly I consider the test cases. Do I take the time to think about edge cases? Do I miss edge cases?
+
+**Analyzing the Solution**
+Time complexity is a way to measure how the runtime of an algorithm scales with the size of the input. We use Big O notation to express this.
+
+- O(1): Constant time (the runtime doesn't depend on the input size).
+
+- O(n): Linear time (the runtime grows linearly with the input size).
+
+- O(n^2): Quadratic time (the runtime grows quadratically with the input size).
+
+- O(log n): Logarithmic time (the runtime grows logarithmically with the input size).
+
+
+For example, the sum problem has a time complexity of O(n) because we need to iterate through each element in the array once.
+
+*Interviewer Tip:* Do I explain why my solution has a particular time complexity? Do I consider alternative solutions with better time complexities? If I am not considering time complexity or explaining it well, let me know.
+
+**Common Topics**
+LeetCode problems often fall into these categories:
+
+- Arrays and Strings: Manipulating sequences of data.
+
+- Linked Lists: Working with data structures that are linked together.
+
+- Trees and Graphs: Representing hierarchical and interconnected data.
+
+- Dynamic Programming: Breaking down problems into smaller, overlapping subproblems.
+
+- Sorting and Searching: Efficiently organizing and finding data.
+
+- Hash Tables: Storing and retrieving data using key-value pairs.
+
+- Recursion: Solving problems by breaking them down into smaller instances of the same problem.
+
+
+*Interviewer Tip:* When you are listening to me, if I mention these topics, you can ask a question about the topic. For example, if I mention a Hash Table, you can ask "What is a Hash table?" This will allow me to practice explaining the concepts.
+
+**Interviewer Checklist**
+Clarity:
+- Did I clearly explain _what_ I'm trying to do and _why_?
+
+- Did I break down the problem into smaller, manageable steps?
+
+- Did I ask enough clarifying questions to get all the details required for a proper solution?
+
+
+Code Efficiency
+- Did I discuss the time complexity?
+
+- Did I discuss the space complexity
+
+
+Code Quality
+- Is the code readable? with meaning variable names and comments.
+
+- Did I test my code with the test cases that were created?
+
+- Is the code correct? How did I handle bugs?`
+
+    }
 ]
