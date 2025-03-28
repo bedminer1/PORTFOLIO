@@ -26,6 +26,15 @@ export const load = ({ params }) => {
 
 let notes: Note[] = [
     {
+        "title": "Writing Everyday",
+        "date": "28 MAR 2025",
+        "text": `Inspired by "Day XX of practicing public speaking on Tiktok" videos, I've realized how developing a habit of expression your reflections and thoughts daily can be a good way of consolidating your learning and building a brand, showing others the type of person you are.
+
+So this note is a way of making my commitment to writing daily blogs public. I want to write about a range of topics, things I've read about, things I've learnt from personal experience, rants, and celebrations.
+
+Instead of writing only when "inspiration strikes", it's better to form the habit of writing everyday. Even though at the beginning it might feel like I have nothing to say, over time my ability to share and express my own opinions will become more refined, by then hopefully my daily writing won't too bad. `,
+    },
+    {
         "title": "Why Be a Knowledge Broker?",
         "date": "5 MAR 2025",
         "text": `**Knowledge Brokers**
