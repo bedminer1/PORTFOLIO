@@ -8,6 +8,10 @@
 
     let notes: Note[] = [
         {
+            "title": "Building for Ghosts",
+            "date": "29 MAR 2025",
+        },
+        {
             "title": "Writing Everyday",
             "date": "28 MAR 2025",
         },

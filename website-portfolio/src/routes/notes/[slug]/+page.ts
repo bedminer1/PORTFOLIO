@@ -26,6 +26,18 @@ export const load = ({ params }) => {
 
 let notes: Note[] = [
     {
+        "title": "Building for Ghosts",
+        "date": "29 MAR 2025",
+        "text": `The room was thick with anticipation. Moments earlier, we'd laid out our vision: PathHero, an app to transform firefighting with interactive digital maps and AI-driven rescue routes. Now, the investors' questions hung in the air, each one a potential landmine. 'Have you spoken to the firefighters?' one asked, his brow furrowed. 'Would they _actually_ use this?'
+
+It was a good learning opportunity. We had focused too much on the 'what' — the cool tech, the innovative features, neglecting the 'who' — feedback from firefighters that would actually use the app. 
+
+I walked away from that pitch with a few questions I could use to guide future idea validation (and surprisingly, the 10k grant lol) —"Would firefighters actually want to use a program like this?" and "How would the target audience of the product want to improve this product for their own use?".
+
+I also realized that the compelling slide on a pitch deck wouldn't be a feature list, but a collection of users' voices — quotes, authentic feedback, and validation that they would actually want to use the app.
+`
+    },
+    {
         "title": "Writing Everyday",
         "date": "28 MAR 2025",
         "text": `Inspired by "Day XX of practicing public speaking on Tiktok" videos, I've realized how developing a habit of expression your reflections and thoughts daily can be a good way of consolidating your learning and building a brand, showing others the type of person you are.
