@@ -26,6 +26,21 @@ export const load = ({ params }) => {
 
 let notes: Note[] = [
     {
+        "title": "Take It Easy",
+        "date": "31 MAR 2025",
+        "text": `It's Day 4 of my "Write a Note Everyday" Challenge, but I'm only on note number 3.
+
+I noticed that after sharing links to my portfolio website, I became much more self aware of the content I put out, becoming a perfectionist when writing new notes (in a bad way). 
+
+I had many ideas on what to write about but shot them all down, paralyzed by thoughts of "This isn't interesting enough", "My opinion on this wouldn't matter", etc. 
+
+I believe that perfectionism is counter-productive  — even if I write something that's 'bad', it's still a good learning opportunity and good practice. And the primary goal of the exercise isn't really to get myself to write super well either, it's suppose to be an outlet for self-expression, and it's unrealistic to be 100% creative/inspired every time you write. 
+
+Drive to get better at writing (eg. asking LLMs to give me tips on writing and implementing those tips) is only helpful/productive so long as it stays fun and doesn't become a burden.
+
+So a small note to self: "Don't worry too much and just get into the writing. Take it easy, stay true to yourself and just write about what's on your mind."`
+    },
+    {
         "title": "Building for Ghosts",
         "date": "29 MAR 2025",
         "text": `The room was thick with anticipation. Moments earlier, we'd laid out our vision: PathHero, an app to transform firefighting with interactive digital maps and AI-driven rescue routes. Now, the investors' questions hung in the air, each one a potential landmine. 'Have you spoken to the firefighters?' one asked, his brow furrowed. 'Would they _actually_ use this?'
