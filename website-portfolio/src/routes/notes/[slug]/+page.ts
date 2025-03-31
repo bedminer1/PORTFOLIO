@@ -26,15 +26,15 @@ export const load = ({ params }) => {
 
 let notes: Note[] = [
     {
-        "title": "Take It Easy",
+        "title": "Just Not Feeling It",
         "date": "31 MAR 2025",
-        "text": `It's Day 4 of my "Write a Note Everyday" Challenge, but I'm only on note number 3.
+        "text": `It's Day 4 of my "Write a Note Everyday" Challenge, but I'm still on note number 3.
 
 I noticed that after sharing links to my portfolio website, I became much more self aware of the content I put out, becoming a perfectionist when writing new notes (in a bad way). 
 
-I had many ideas on what to write about but shot them all down, paralyzed by thoughts of "This isn't interesting enough", "My opinion on this wouldn't matter", etc. 
+I had many ideas on what to write about but shot them all down, constipation caused by thoughts of "This isn't interesting enough", "My opinion on this wouldn't matter", etc. 
 
-I believe that perfectionism is counter-productive  — even if I write something that's 'bad', it's still a good learning opportunity and good practice. And the primary goal of the exercise isn't really to get myself to write super well either, it's suppose to be an outlet for self-expression, and it's unrealistic to be 100% creative/inspired every time you write. 
+Perfectionism is counter-productive; 'bad writing' can be good learning opportunities. Anyway, the primary goal of this exercise isn't even to get myself to write super well either — it's suppose to be an outlet for self-expression, and it's unrealistic to be 100% creative/inspired all the time. 
 
 Drive to get better at writing (eg. asking LLMs to give me tips on writing and implementing those tips) is only helpful/productive so long as it stays fun and doesn't become a burden.
 

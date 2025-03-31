@@ -8,7 +8,7 @@
 
     let notes: Note[] = [
         {
-            "title": "Take It Easy",
+            "title": "Just Not Feeling It",
             "date": "31 MAR 2025",
         },
         {
