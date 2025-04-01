@@ -26,6 +26,21 @@ export const load = ({ params }) => {
 
 let notes: Note[] = [
     {
+        "title": "Tech Collabing Manual",
+        "date": "1 APR 2025",
+        "text": `In 2024, I did most of my coding projects alone. In 2025, I made a resolution to be less antisocial (lol).  And so since January, I've participated for 3 hackathons and contributed to 2 start-ups, working in teams of  ~3-10 developers. 
+
+Being real, there were times I thought "It'd be easier if I just locked in and wrote it all myself". I realize that's insanely self-conceited, but maybe it's true. However, thinking that way would be entirely missing the point of the exercise — to learn to work in teams and get everyone to contribute to the best of their abilities. 
+
+Some takeaways: 
+- Map out the architecture first — define data flow diagrams and API specifications early on to minimize dev disruptions.
+- Play to people's strengths  — don't force a bad fit. 
+- Schedule meetings — code review is not just for bug spotting, but also knowledge sharing to keep everyone on the same page. Also serves as 'deadlines' to keep dev on track.
+
+
+Overall, I'd say that experience has been great, I've learnt a lot from others and also spent meaningful time teaching and sharing my passion for tech to teammates less experienced. `
+    },
+    {
         "title": "Just Not Feeling It",
         "date": "31 MAR 2025",
         "text": `It's Day 4 of my "Write a Note Everyday" Challenge, but I'm still on note number 3.
