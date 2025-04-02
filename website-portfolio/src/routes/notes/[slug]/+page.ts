@@ -34,7 +34,7 @@ It got me thinking of an opinion I heard awhile a go, along the lines of "Hittin
 
 It's tempting to dismiss it as trying to rationalize a frivolous use of time. Yet, it really is true that the way I approached getting better at the game is quite transferable to other goals. I would watch high rank gameplay of the characters I want to get better at, always with the prompt "Why would they do this?", "Why did this turn out well?" to guide my analysis and learn their reasoning and game sense. 
 
-The capacity for sustained, focused effort — the much-maligned 'grind' —is another component of mastery, learning that "more(effective) time spent translates to better results".
+The capacity for sustained, focused effort — the much-maligned 'grind' — is another component of mastery, learning that "more (effective) time spent translates to better results".
 
 Reaching a high rank is an exercise in developing a robust self-improvement algorithm, a framework for learning and execution. And it has influenced my approach to other interests too: basketball, running, programming etc. `
     },
