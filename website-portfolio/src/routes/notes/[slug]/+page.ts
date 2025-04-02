@@ -26,6 +26,19 @@ export const load = ({ params }) => {
 
 let notes: Note[] = [
     {
+        "title": "Wildrift Grinding Manual",
+        "date": "2 APR 2025",
+        "text": `The past 2-3 days, my coding regimen yielded to an obsession to reach Grandmaster rank on Wildrift. This is a familiar pattern when faced with any compelling goal. While perhaps misdirected towards gaming, this episode offers curious insights into the mechanics of achievement.
+
+It got me thinking of an opinion I heard awhile a go, along the lines of "Hitting high ranks in video games are good indicators of success in the future". 
+
+It's tempting to dismiss it as trying to rationalize a frivolous use of time. Yet, it really is true that the way I approached getting better at the game is quite transferable to other goals. I would watch high rank gameplay of the characters I want to get better at, always with the prompt "Why would they do this?", "Why did this turn out well?" to guide my analysis and learn their reasoning and game sense. 
+
+The capacity for sustained, focused effort — the much-maligned 'grind' —is another component of mastery, learning that "more(effective) time spent translates to better results".
+
+Reaching a high rank is an exercise in developing a robust self-improvement algorithm, a framework for learning and execution. And it has influenced my approach to other interests too: basketball, running, programming etc. `
+    },
+    {
         "title": "Tech Collabing Manual",
         "date": "1 APR 2025",
         "text": `In 2024, I did most of my coding projects alone. In 2025, I made a resolution to be less antisocial (lol).  And so since January, I've participated for 3 hackathons and contributed to 2 start-ups, working in teams of  ~3-10 developers. 
