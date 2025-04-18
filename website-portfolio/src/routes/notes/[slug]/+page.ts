@@ -28,17 +28,18 @@ let notes: Note[] = [
     {
         "title": "Naval vs Recreational Diving",
         "date": "19 APR 2025",
-        "text": `170 bars of pressurized air consumed in 35minutes, while my buddy had 100 left. During my first recreational dive, about 1.5 years since I last dived in the Navy; because of me, my buddy miss out on almost half the dive he paid for. 
+        "text": `170 bars of pressurized air consumed in 35minutes, while my buddy had 100 left. It was my first recreational dive ~1.5 years since I last dived in the Navy. But because of me, my buddy missed out on almost half the dive he paid for. 
 
 Previously, my habit was to get the jobs done ASAP, chugging through gas to give my body the oxygen needed to do power-strokes and blitz through tasks with my hands, usually having more than enough gas to complete the task.
 
-That night I spent all my time in the hotel researching about how to increase my bottom time, with a bit of my competitiveness flaring up, hoping to outlast my buddy on one of the dives.
+That night I spent all my time in the hotel researching about how to increase my bottom time, with a bit of my competitive nature flaring up, hoping to outlast my buddy on one of the dives.
 
-In the end, I doubled my bottom time, achieving 60 minutes with 140 bars spent (better bottom times are coming soon), even outlasting that buddy. Some of the most useful tips/queues:
+In the end, I doubled my bottom time, achieving 60 minutes with 140 bars spent (better bottom times are coming soon) + outlasting that buddy. Some of the most useful tips/queues:
 
 1. Breathe slower —Try with counts of 4 in and out first, then push it to 6, then 8. Generally, it's easier to slow down the exhale than the inhale, so do that.
 2. Minimize hand movement — unlike surface swimming, fins can do all the work with proper technique. Using your hands is inefficient and makes you burn gas too quickly.
-3. Stay calm — sometimes when I felt stress underwater like having problems equalizing the pressure, I would just close my eyes, tune everything out and think to myself "I am so calm right now", and it works. `
+3. Stay calm — sometimes when I felt stress underwater like having problems equalizing the pressure, I would just close my eyes, tune everything out and think to myself "I am so calm right now", and it works. 
+4. Be a 50kg woman — women have smaller lungs so its easier to regulate. Also, the lighter you are, the easier it is move around in the water + you have less oxygen-craving cells. `
     },
     {
         "title": "Wildrift Grinding Manual",
