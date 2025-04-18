@@ -49,6 +49,10 @@
     ulElements.forEach(ul => {
         ul.classList.add('list-disc', 'list-outside', "mb-4", "mt-2");
     });
+    const olElements = tempDiv.querySelectorAll('ol');
+    olElements.forEach(ol => {
+        ol.classList.add('list-decimal', 'list-outside', "mb-4", "mt-2");
+    });
     const liElements = tempDiv.querySelectorAll('li');
     liElements.forEach(li => {
         li.classList.add('ml-10', "mb-1");
