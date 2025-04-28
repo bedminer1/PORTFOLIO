@@ -117,7 +117,7 @@ Progress compounds over time, and the real challenge is staying in the game long
     {
         "title": "Leetcode Interviewer Manual",
         "date": "17 MAR 2025",
-        "description": "",
+        "description": "Focus on problem-solving approach, testing edge cases, and evaluating problem breakdown over just the final solution.",
         "text": `A close friend recently offered to be a mock interviewer for leetcode interview practice even though she doesn't have much experience with leetcode (yet). This guide was written for her to learn about the basics of leetcode, with tips for being a good interviewer. 
 
 **The Problem**
