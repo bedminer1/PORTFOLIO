@@ -10,4 +10,10 @@ declare global {
 	}
 }
 
+interface Note {
+    title: string
+    date: string
+    text: string
+}
+
 export {};

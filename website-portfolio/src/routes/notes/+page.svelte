@@ -1,50 +1,8 @@
 <script lang="ts">
     import { mode } from "mode-watcher"
 
-    interface Note {
-        title: string
-        date: string
-    }
-
-    let notes: Note[] = [
-        {
-            "title": "Naval vs Recreational Diving",
-            "date": "19 APR 2025",
-        },
-        {
-            "title": "Wildrift Grinding Manual",
-            "date": "2 APR 2025",
-        },
-        {
-            "title": "Tech Collabing Manual",
-            "date": "1 APR 2025",
-        },
-        {
-            "title": "Just Not Feeling It",
-            "date": "31 MAR 2025",
-        },
-        {
-            "title": "Building for Ghosts",
-            "date": "29 MAR 2025",
-        },
-        {
-            "title": "Writing Everyday",
-            "date": "28 MAR 2025",
-        },
-        {
-            "title": "Leetcode Interviewer Manual",
-            "date": "17 MAR 2025",
-        },
-        {
-            "title": "Why Be a Knowledge Broker?",
-            "date": "5 MAR 2025",
-        },
-        {
-            "title": "Building Systems, Not Goals",
-            "date": "5 MAR 2025",
-        },
-    ]
-
+    let { data } = $props()
+    let { notes } = data
 </script>
 
 <div class="w-full flex flex-col justify-center pl-4 pr-4 {$mode === "light" ? "text-gray-500" : "text-gray-400"}">
@@ -56,6 +14,3 @@
     {/each}
 </div>
 
-<style>
-
-</style>
