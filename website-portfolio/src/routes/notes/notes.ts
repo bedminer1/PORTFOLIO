@@ -2,6 +2,7 @@ export const notes  = [
     {
         "title": "Naval vs Recreational Diving",
         "date": "19 APR 2025",
+        "description": "Reflections on relearning efficient air consumption after transitioning from military to recreational diving, with practical tips for doubling bottom time.",
         "text": `170 bars of pressurized air consumed in 35minutes, while my buddy had 100 left. It was my first recreational dive ~1.5 years since I last dived in the Navy. But because of me, my buddy missed out on almost half the dive he paid for. 
 
 Previously, my habit was to get the jobs done ASAP, chugging through gas to give my body the oxygen needed to do power-strokes and blitz through tasks with my hands, usually having more than enough gas to complete the task.
@@ -18,6 +19,7 @@ In the end, I doubled my bottom time, achieving 60 minutes with 140 bars spent (
     {
         "title": "Wildrift Grinding Manual",
         "date": "2 APR 2025",
+        "description": "Lessons from chasing Grandmaster rank in Wildrift: building a grind mindset and transferring competitive analysis skills to other goals.",
         "text": `The past 2-3 days, my coding regimen yielded to an obsession to reach Grandmaster rank on Wildrift. This is a familiar pattern when faced with any compelling goal. While perhaps misdirected towards gaming, this episode offers curious insights into the mechanics of achievement.
 
 It got me thinking of an opinion I heard awhile a go, along the lines of "Hitting high ranks in video games are good indicators of success in the future". 
@@ -31,6 +33,7 @@ Reaching a high rank is an exercise in developing a robust self-improvement algo
     {
         "title": "Tech Collabing Manual",
         "date": "1 APR 2025",
+        "description": "Personal lessons from moving from solo coding to team coding — how to map architecture early, play to strengths, and sync knowledge.",
         "text": `In 2024, I did most of my coding projects alone. In 2025, I made a resolution to be less antisocial (lol).  And so since January, I've participated for 3 hackathons and contributed to 2 start-ups, working in teams of  ~3-10 developers. 
 
 Being real, there were times I thought "It'd be easier if I just locked in and wrote it all myself". I realize that's insanely self-conceited, but maybe it's true. However, thinking that way would be entirely missing the point of the exercise — to learn to work in teams and get everyone to contribute to the best of their abilities. 
@@ -46,6 +49,7 @@ Overall, I'd say that experience has been great, I've learnt a lot from others a
     {
         "title": "Just Not Feeling It",
         "date": "31 MAR 2025",
+        "description": "How self-consciousness after sharing my work publicly stalled my writing, and why perfectionism is the real enemy of consistency.",
         "text": `It's Day 4 of my "Write a Note Everyday" Challenge, but I'm still on note number 3.
 
 I noticed that after sharing links to my portfolio website, I became much more self aware of the content I put out, becoming a perfectionist when writing new notes (in a bad way). 
@@ -61,6 +65,7 @@ So a small note to self: "Don't worry too much and just get into the writing. Ta
     {
         "title": "Building for Ghosts",
         "date": "29 MAR 2025",
+        "description": "A pitch mistake: focusing on flashy tech without user validation — and how real product credibility comes from user voices, not feature lists.",
         "text": `The room was thick with anticipation. Moments earlier, we'd laid out our vision: PathHero, an app to transform firefighting with interactive digital maps and AI-driven rescue routes. Now, the investors' questions hung in the air, each one a potential landmine. 'Have you spoken to the firefighters?' one asked, his brow furrowed. 'Would they _actually_ use this?'
 
 It was a good learning opportunity. We had focused too much on the 'what' — the cool tech, the innovative features, neglecting the 'who' — feedback from firefighters that would actually use the app. 
@@ -73,6 +78,7 @@ I also realized that the compelling slide on a pitch deck wouldn't be a feature 
     {
         "title": "Writing Everyday",
         "date": "28 MAR 2025",
+        "description": "A public commitment to daily writing as a habit-building tool for expression, even when inspiration runs dry.",
         "text": `Inspired by "Day XX of practicing public speaking on Tiktok" videos, I've realized how developing a habit of expression your reflections and thoughts daily can be a good way of consolidating your learning and building a brand, showing others the type of person you are.
 
 So this note is a way of making my commitment to writing daily blogs public. I want to write about a range of topics, things I've read about, things I've learnt from personal experience, rants, and celebrations.
@@ -82,6 +88,7 @@ Instead of writing only when "inspiration strikes", it's better to form the habi
     {
         "title": "Why Be a Knowledge Broker?",
         "date": "5 MAR 2025",
+        "description": "Inspired by Never Eat Alone, a reminder that documenting insights isn't enough — real value comes from connecting and sharing them.",
         "text": `**Knowledge Brokers**
 In _Never Eat Alone_, the author introduces the concept of _knowledge brokers_—people who curate, connect, and distribute valuable insights. He describes it as a relationship-building system: you start with one friend and one problem, but over time, you become a hub of interconnected people and solutions.
 
@@ -94,6 +101,7 @@ This website is my own attempt at being a knowledge broker—a library of ideas,
     {
         "title": "Building Systems, Not Goals",
         "date": "5 MAR 2025",
+        "description": "Why systems, identity, and showing up matter more than goals — and how habit design compounds into real progress.",
         "text": `**Systems**
 Goals define where you want to go (like a compass), but systems determine whether you get there. Instead of obsessing over the end result, focus on the processes that drive consistent progress. A basketball coach doesn’t win championships by fixating on the trophy but by implementing the right training drills, strategies, and player development. Success is a byproduct of well-designed systems.
 
@@ -109,6 +117,7 @@ Progress compounds over time, and the real challenge is staying in the game long
     {
         "title": "Leetcode Interviewer Manual",
         "date": "17 MAR 2025",
+        "description": "",
         "text": `A close friend recently offered to be a mock interviewer for leetcode interview practice even though she doesn't have much experience with leetcode (yet). This guide was written for her to learn about the basics of leetcode, with tips for being a good interviewer. 
 
 **The Problem**

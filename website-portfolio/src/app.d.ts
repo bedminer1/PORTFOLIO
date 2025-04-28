@@ -14,6 +14,7 @@ interface Note {
     title: string
     date: string
     text: string
+	description: string
 }
 
 export {};
