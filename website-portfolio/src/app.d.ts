@@ -13,6 +13,7 @@ declare global {
 interface Note {
     title: string
     date: string
+	badges: string
     text: string
 	description: string
 }

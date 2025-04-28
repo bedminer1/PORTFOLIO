@@ -2,16 +2,9 @@
 	import '../app.css'
 	import { ModeWatcher, toggleMode, mode } from 'mode-watcher'
 	import { Toaster } from "$lib/components/ui/sonner";
-  	import { Switch } from '$lib/components/ui/switch';
 	import { Separator } from '$lib/components/ui/separator';
 	import { page } from "$app/stores"
-
-	let toggled = false
-	$: {
-		if (toggled) {}
-	 	toggleMode() 
-	}
-	toggleMode()
+	import { Sun, Moon } from "lucide-svelte"
 
 	$: currentPath = $page.url.pathname
 	$: textColor = $mode === "dark" ? "text-gray-400" : "text-gray-400"
@@ -33,7 +26,13 @@
 <Toaster />
 <ModeWatcher />
 <div class="p-2 mb-4 w-full justify-end flex">
-	<Switch bind:checked={toggled}/>
+	<button onclick={toggleMode}>
+		{#if $mode === "light"}
+			<Sun />
+		{:else}
+			<Moon />
+		{/if}
+	</button>
 </div>
 <div class="flex w-full font-serif">
 	<div class="w-1/4 flex flex-col items-center pt-10 italic">
