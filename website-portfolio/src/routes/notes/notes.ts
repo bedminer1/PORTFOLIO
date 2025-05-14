@@ -1,8 +1,21 @@
 export const notes  = [
     {
+        "title": "Easy vs Earned",
+        "date": "14 MAY 2025",
+        "tags": "",
+        "description": "Let reward follow effort — not precede it",
+        "text": `Chasing dopamine shapes much of human behavior, but not all dopamine hits are the same.
+
+Instant gratification — doomscrolling social media, junk food, porn, binge-watching Netflix — causes sharp spikes and aggressive fall offs in dopamine. The steep crashes creates cycles of withdrawal and craving, leading to addictive behaviour. Quick, easy, and soulless hedonism.
+
+**Delayed gratification** — exercise, creating, learning, or skill-building — dopamine rises slowly but sticks longer. It doesn't short circuit the brain, but accumulates quietly and compounds (like a good investment), building a more stable foundation of confidence and satisfaction. 
+
+The problem isn't dopamine itself — it's the source, isn't it? No need to go against the grain of our biology and rejecting dopamine wholesale, it's not sustainable. Just let reward follow work — not precede it.`
+    },
+    {
         "title": "Naval vs Recreational Diving",
         "date": "19 APR 2025",
-        "tags": "tag1,tag2",
+        "tags": "",
         "description": "Reflections on relearning efficient air consumption after transitioning from military to recreational diving, with practical tips for doubling bottom time.",
         "text": `170 bars of pressurized air consumed in 35minutes, while my buddy had 100 left. It was my first recreational dive ~1.5 years since I last dived in the Navy. But because of me, my buddy missed out on almost half the dive he paid for. 
 
