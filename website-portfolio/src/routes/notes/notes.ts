@@ -1,3 +1,12 @@
+// TEMPLATE
+//     {
+//         "title": "",
+//         "date": "",
+//         "tags": "",
+//         "description": "",
+//         "text": ``
+//     },
+
 export const notes  = [
     {
         "title": "Easy vs Earned",
