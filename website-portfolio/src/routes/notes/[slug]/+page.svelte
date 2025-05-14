@@ -57,6 +57,11 @@
     liElements.forEach(li => {
         li.classList.add('ml-10', "mb-1");
     });
+    const aElements = tempDiv.querySelectorAll("a")
+    aElements.forEach(a => {
+        a.target = "_blank"
+        a.classList.add("underline")
+    })
 
     data.text = tempDiv.innerHTML;
 
