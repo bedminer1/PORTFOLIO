@@ -6,7 +6,7 @@ export const notes  = [
         "description": "Let reward follow effort — not precede it",
         "text": `Chasing dopamine shapes much of human behavior, but not all dopamine hits are the same.
 
-Instant gratification — doomscrolling social media, junk food, porn, binge-watching Netflix — causes sharp spikes and aggressive fall offs in dopamine. The steep crashes creates cycles of withdrawal and craving, leading to addictive behaviour. Quick, easy, and soulless hedonism.
+**Instant gratification** — doomscrolling social media, junk food, porn, binge-watching Netflix — causes sharp spikes and aggressive fall offs in dopamine. The steep crashes creates cycles of withdrawal and craving, leading to addictive behaviour. Quick, easy, and soulless hedonism.
 
 **Delayed gratification** — exercise, creating, learning, or skill-building — dopamine rises slowly but sticks longer. It doesn't short circuit the brain, but accumulates quietly and compounds (like a good investment), building a more stable foundation of confidence and satisfaction. 
 
