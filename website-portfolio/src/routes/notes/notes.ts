@@ -9,19 +9,23 @@
 
 export const notes  = [
     {
-        "title": "Easy vs Earned",
+        "title": "Actually Stop Doomscrolling",
         "date": "14 MAY 2025",
         "tags": "",
         "description": "Let reward follow effort — not precede it",
-        "text": `Chasing dopamine shapes much of human behavior, but not all dopamine hits are the same.
+        "text": `"Delayed gratification is better than instant gratification" might sound like really obvious and superficial advice, but understanding the mechanisms of dopamine unlocked insights that further evolved into actionable advice. 
 
-Instant gratification — doomscrolling social media, junk food, porn, binge-watching Netflix — causes sharp spikes and aggressive fall offs in dopamine. The steep crashes creates cycles of withdrawal and craving, leading to addictive behaviour. Quick, easy, and soulless hedonism.
+Instant gratification — doomscrolling social media, junk food, porn, binge-watching Netflix — causes sharp spikes and aggressive fall offs in dopamine. The steep crashes creates cycles of withdrawal and craving, leading to addictive behaviour. When the tiktok video becomes boring, we scroll to get another fresh, strong hit.
 
-**Delayed gratification** — exercise, creating, learning, or skill-building — dopamine rises slowly but sticks longer. It doesn't short circuit the brain, but accumulates quietly and compounds (like a good investment), building a more stable foundation of confidence and satisfaction. 
+**Delayed gratification** — exercise, creating, learning, or skill-building — dopamine rises slowly but sticks longer. Satisfaction from these activities don't short circuit the brain, but accumulates quietly and compounds (like a good investment).
 
-The problem isn't dopamine itself — it's the source, isn't it? No need to go against the grain of our biology and rejecting dopamine wholesale, it's not sustainable. Just let reward follow work — not precede it.
+The problem isn't dopamine itself — it's the source, isn't it? Make an environment where it becomes hard to fall into that loop, and promote good habits. 
 
-Reference: ["how to unf*ck your mind so that hard things become easy" (video)](https://www.youtube.com/watch?v=-qYann7hy0o)`
+Personally, I deleted unproductive social media apps, turned my phone to gray-scale to reduce the dopamine, and take the time to pause and soak in the good dopamine, after a workout or completing a coding/writing tasks. 
+
+Let reward follow work — not precede it.
+
+Reference: ["how to unf*ck your mind so that hard things become easy"(video)]( https://www.youtube.com/watch?v=-qYann7hy0o )`
     },
     {
         "title": "Naval vs Recreational Diving",
