@@ -50,9 +50,7 @@ In the end, I doubled my bottom time, achieving 60 minutes with 140 bars spent (
         "date": "2 APR 2025",
         "tags": "",
         "description": "Lessons from chasing Grandmaster rank in Wildrift: building a grind mindset and transferring competitive analysis skills to other goals.",
-        "text": `The past 2-3 days, my coding regimen yielded to an obsession to reach Grandmaster rank on Wildrift. This is a familiar pattern when faced with any compelling goal. While perhaps misdirected towards gaming, this episode offers curious insights into the mechanics of achievement.
-
-It got me thinking of an opinion I heard awhile a go, along the lines of "Hitting high ranks in video games are good indicators of success in the future". 
+        "text": `"Ability to hit high ranks in video games is a good indicator of success in the future". 
 
 It's tempting to dismiss it as trying to rationalize a frivolous use of time. Yet, it really is true that the way I approached getting better at the game is quite transferable to other goals. I would watch high rank gameplay of the characters I want to get better at, always with the prompt "Why would they do this?", "Why did this turn out well?" to guide my analysis and learn their reasoning and game sense. 
 
