@@ -71,9 +71,9 @@ In the end, I doubled my bottom time, achieving 60 minutes with 140 bars spent (
 
 It's tempting to dismiss it as trying to rationalize a frivolous use of time. Yet, it really is true that the way I approached getting better at the game is quite transferable to other goals. I would watch high rank gameplay of the characters I want to get better at, always with the prompt "Why would they do this?", "Why did this turn out well?" to guide my analysis and learn their reasoning and game sense. 
 
-The capacity for sustained, focused effort — the much-maligned 'grind' — is another component of mastery, learning that "more (effective) time spent translates to better results".
+The capacity for sustained, focused effort — 'grinding' — is another component of mastery, learning that there is no way around the fact that time is exchanged for mastery and results.
 
-Reaching a high rank is an exercise in developing a robust self-improvement algorithm, a framework for learning and execution. And it has influenced my approach to other interests too: basketball, running, programming etc. `
+Being competitive about video games has been an exercise in developing a robust self-improvement framework, to iteratively minimize mistakes and imitate good strategies. And it has influenced my approach to other interests too: basketball, running, programming etc. `
     },
     {
         "title": "Tech Collabing Manual",
@@ -90,7 +90,7 @@ Some takeaways:
 - Schedule meetings — code review is not just for bug spotting, but also knowledge sharing to keep everyone on the same page. Also serves as 'deadlines' to keep dev on track.
 
 
-Overall, I'd say that experience has been great, I've learnt a lot from others and also spent meaningful time teaching and sharing my passion for tech to teammates less experienced. `
+Overall, I'd say that experience has been great, I've learnt a lot from experienced devs and also spent meaningful time teaching and sharing my passion for tech to teammates less experienced. `
     },
     {
         "title": "Just Not Feeling It",
@@ -169,7 +169,7 @@ Progress compounds over time, and the real challenge is staying in the game long
         "title": "Leetcode Interviewer Manual",
         "date": "17 MAR 2025",
         "tags": "",
-        "description": "Focus on problem-solving approach, testing edge cases, and evaluating problem breakdown over just the final solution.",
+        "description": "Focus on problem-solving approach, testing edge cases, and evaluating problem breakdown instead of just the final solution.",
         "text": `A close friend recently offered to be a mock interviewer for leetcode interview practice even though she doesn't have much experience with leetcode (yet). This guide was written for her to learn about the basics of leetcode, with tips for being a good interviewer. 
 
 **The Problem**
