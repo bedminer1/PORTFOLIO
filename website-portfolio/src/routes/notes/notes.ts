@@ -21,7 +21,7 @@ A graph of the dopamine of an unproductive vs a productive person might look som
 
 When the unproductive person wakes up, first thing he does is scroll instagram — nice big hit of dopamine to start the day. Its 10am and he needs to start doing some work, but the dopamine withdrawal hits and he can't lock in. He watches netflix to get another hit — "one episode and I'll start for real". This cycle continues sisypheanly and it seems like the ability to focus is impossible.
 
-A more productive structure would be to refrain from large dopamine spikes in the morning-afternoon, moderating dopamine from food, entertainment, sexual sources. Staying in that "fasted" state, go straight into getting work done, then indulge in the evenings once you're done with work for the day (NOT during breaks).
+A more productive structure would be to refrain from large dopamine spikes in the morning-afternoon, moderating dopamine from food, entertainment, etc sources. Staying in that "fasted" state, go straight into getting work done, then indulge in the evenings once you're done with work for the day (NOT during breaks).
 
 It's not about completely abstinence, that would be quite depressing. The key is the timing/sequence.`
     },
