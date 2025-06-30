@@ -15,11 +15,11 @@
             </p>
             <br>
             <p>
-                Some other hobbies include jamming out jazz <a class="underline" target="_blank" href="https://www.youtube.com/watch?v=gJ9WBYmSO4w&list=PLxe0KcilTZ5BJYFjTUjZTkvazRwZSAAb7&pp=gAQB">solos on the trumpet</a>, playing scaling hypercarries on Wildrift with my friend, and working on post moves for Sunday morning basketball pick-up. 
+                Some other hobbies include jamming out jazz <a class="underline" target="_blank" href="https://www.youtube.com/watch?v=gJ9WBYmSO4w&list=PLxe0KcilTZ5BJYFjTUjZTkvazRwZSAAb7&pp=gAQB">trumpet and guitar solos</a> and working on Giannis-inspired moves for pick-up basketball runs. 
             </p>
             <br>
             <p>
-                If my <a class="underline" href="/projects">projects</a>, <a class="underline" href="/notes">notes</a>, or hobbies seem interesting, I'm always down to talk — feel free to reach out on <a target="_blank" class="underline" href="https://x.com/bedminer1">Twitter</a> or <a target="_blank" class="underline" href="https://www.linkedin.com/in/alexander-seah-4a23622b5/">LinkedIn</a>!
+                If my <a class="underline" href="/projects">projects</a>, <a class="underline" href="/notes">notes</a>, or hobbies seem interesting, I'm always down to talk — feel free to reach out on <a target="_blank" class="underline" href="https://x.com/bedminer1">Twitter</a> or <a target="_blank" class="underline" href="https://www.instagram.com/dkffjlrtm/">Instagram</a>!
             </p>
         </div>
     </div>

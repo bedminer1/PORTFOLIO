@@ -9,13 +9,19 @@
 
     let projects: Project[] = [
         {
-            title: "HDB Buddy",
-            description: "Finding a home in Singapore can be overwhelming. HDB Buddy simplifies this process by providing insights into resale prices, grants, and loan eligibility. It helps users navigate the complexities of buying an HDB flat with data-driven recommendations and an intuitive interface.",
-            link: "https://github.com/bedminer1/HDB_BUDDY"
+            title: "Bridge",
+            description: `Bridge is a simple game at its core like <b>uno</b>,
+while strategy can go deeper with
+expected value calculations like in <b>poker</b> and
+deduction and bluffing like in <b>mafia</b> where you try figure out who's your teammate.
+<br/><br/>
+I played it everyday in high school, during breaks, after school. But after graduating, it's been harder to organize sessions. I built this to play bridge online/with bots.
+`,
+            link: "https://bridge-psi-ten.vercel.app/"
         },
         {
             title: "Path Hero",
-            description: "Firefighting is all about making split-second decisions in high-risk environments. Path Hero is designed to assist firefighters in navigation and resource allocation during emergencies. With real-time data and AI-driven route suggestions, it improves efficiency in critical situations.",
+            description: "Google maps is good if you know where you're going. But what if you don't really have a plan? You have to do lots of research on google, tiktok, asking chatgpt for ideas on where to go etc. <br/><br/> Maybe that whole process could be done in one step? ",
             link: "https://github.com/ViincentLim/path-hero"
         },
 ];
@@ -26,14 +32,14 @@
         <h1 class="text-xl mb-10"><a target="_blank" href="https://github.com/bedminer1">Projects</a></h1>
         <div class={$mode === "light" ? "text-gray-600" : "text-gray-300"}>
             <p class="mb-4">
-                I like building things that the people around me would find useful/fun. The <a class="underline italic" target="_blank" href="https://github.com/bedminer1">full list</a> is quite long but here are {projects.length} of my favourites.
+                I like building things that the people around me would find useful/fun. The <a class="underline italic" target="_blank" href="https://github.com/bedminer1">full list</a> is quite long but here are {projects.length} of my favourites. (Click on the headers to check out the projects)
             </p>
             <br>
             <div class="flex flex-col gap-8">
                 {#each projects as project}
                 <div>
                     <h1 class="bold mb-2 {$mode === "light" ? "hover:text-gray-900" : "hover:text-gray-100"}"><a href={project.link} target="_blank">{project.title}</a></h1>
-                    <p class={$mode === "light" ? "text-gray-600" : "text-gray-400"}>{project.description}</p>
+                    <p class={$mode === "light" ? "text-gray-600" : "text-gray-400"}>{@html project.description}</p>
                 </div>
                 {/each}
             </div>
