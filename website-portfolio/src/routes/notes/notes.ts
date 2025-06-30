@@ -9,9 +9,26 @@
 
 export const notes  = [
     {
+        "title": "Scheduling Dopamine",
+        "date": "30 JUN 2025",
+        "tags": "Productivity",
+        "description": "Schedule dopamine indulging activites in the evening, lock in during mornings and afternoons.",
+        "text": `After testing out the methods in [Delayed Gratification](/notes/Actually%20Stop%20Doomscrolling), I realized to actually get things done, it's less about the "type" of dopamine and more about the timing.
+
+A graph of the dopamine of an unproductive vs a productive person might look something like this
+
+<img src="/Scheduling_Dopamine.png" alt="productive vs unproductive dopamine scheduling graph" />
+
+When the unproductive person wakes up, first thing he does is scroll instagram — nice big hit of dopamine to start the day. Its 10am and he needs to start doing some work, but the dopamine withdrawal hits and he can't lock in. He watches netflix to get another hit — "one episode and I'll start for real". This cycle continues sisypheanly and it seems like the ability to focus is impossible.
+
+A more productive structure would be to refrain from large dopamine spikes in the morning-afternoon, moderating dopamine from food, entertainment, sexual sources. Staying in that "fasted" state, go straight into getting work done, then indulge in the evenings once you're done with work for the day (NOT during breaks).
+
+It's not about completely abstinence, that would be quite depressing. The key is the timing/sequence.`
+    },
+    {
         "title": "Actually Stop Doomscrolling",
         "date": "14 MAY 2025",
-        "tags": "",
+        "tags": "Productivity",
         "description": "Let reward follow effort — not precede it",
         "text": `"Delayed gratification is better than instant gratification" might sound like really obvious and superficial advice, but understanding the mechanisms of dopamine unlocked insights that further evolved into actionable advice. 
 

@@ -1,11 +1,11 @@
 <script lang="ts">
     import { mode } from "mode-watcher"
     import { marked } from "marked"
+
     import hljs from "highlight.js";
     import javascript from 'highlight.js/lib/languages/javascript';
     import python from 'highlight.js/lib/languages/python';
     import go from 'highlight.js/lib/languages/go';
-  import { parse } from "svelte/compiler";
 
     // register languages for syntax highlighting
     hljs.registerLanguage('javascript', javascript);
@@ -37,7 +37,7 @@
     let tempText = data.text
         .replace(/\n\n/g, " @@BR@@\n")
         .replace(/``` (?!\n)/g, "```\n")
-    console.log(tempText)
+
     let parsedHtml = marked(tempText, { gfm: true, breaks: true }) as string
     parsedHtml = parsedHtml.replace(/(<pre>[\s\S]*?<\/pre>)|@@BR@@/g, (match, preBlock) => {
         return preBlock ? preBlock : "<br>";
