@@ -9,6 +9,23 @@
 
 export const notes  = [
     {
+        "title": "Injective, Surjective, Bijective",
+        "date": "12 AUG 2025",
+        "tags": "Math",
+        "description": "Injective — everyone has their own locker. Surjective — all lockers are used. Bijective — both injective and surjective.",
+        "text": `Imagine a gym with gym-goers and lockers. A spreadsheet contains information about who is assigned which locker. This can be thought of as a function, taking the name of the person as an input, then the locker they are assigned to as an output. 
+
+Following the definitions of a 'function', we can also assume that all gym-goers are assigned a locker (the whole domain is covered), and that each person can only be assigned to exactly 1 locker (single output). 
+
+An **injective** assignment means no two gym-goers are assigned the same locker. Two people sharing a locker would be awkward for security and might cause space issues. You can simplify it by thinking of it as a strict one user to one locker mapping.
+
+A **surjective** assignment means every locker is used. Think of the the total number of lockers as the 'codomain' and the lockers being used as the 'range'. Surjectivity means the range equals the codomain — where all lockers are used.
+
+A **bijective** assignment is both injective and surjective — every gym-goer has their own locker, and every locker has exactly one gym-goer.
+
+For a function to be **invertible**, it must be bijective. If we wanted to reverse the spreadsheet to look up a locker ID and get the gym-goer’s name, each locker would need to be assigned to exactly one person (original function being injective ensures no duplicates), and every locker would need to be in use (surjective ensures full coverage of inverse function's domain).`
+    },
+    {
         "title": "Scheduling Dopamine",
         "date": "30 JUN 2025",
         "tags": "Productivity",
