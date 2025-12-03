@@ -9,6 +9,7 @@
 
 <div class="w-full flex flex-col justify-center pl-4 pr-4 {$mode === "light" ? "text-gray-500" : "text-gray-400"}">
     {#each notes as note, index}
+    {#if !note.tags.split(",").includes("Archived")}
     <HoverCard.Root>
         <HoverCard.Trigger>
             <a class="flex w-full mb-1 justify-between {$mode === "light" ? "hover:text-gray-900" : "hover:text-gray-100"}" href={"notes/" + note.title.replace(/\?/g, "%3F")}>
@@ -29,6 +30,7 @@
             {/if} 
         </HoverCard.Content>
     </HoverCard.Root>
+    {/if}
     {/each}
 </div>
 
