@@ -1,13 +1,13 @@
 <script lang="ts">
     import { mode } from "mode-watcher"
-    import pfp from "$lib/assets/githubpfpcircle.png"
+    import pfp from "$lib/assets/diving_pfp_circle.png"
 </script>
 
 <div class="w-full flex flex-col justify-center pl-4 gap-10">
     <div class="w-full pr-3 md:w-3/4">
         <div class="flex justify-between mb-5 items-center">
             <h1 class="text-xl">Alexander Seah</h1>
-            <img class="w-20 border-2 border-black" src={pfp} alt="profile">
+            <img class="w-24 mr-10" src={pfp} alt="profile">
         </div>
         <div class={$mode === "light" ? "text-gray-600" : "text-gray-300"}>
             <p>
