@@ -9,6 +9,19 @@
 
 export const notes  = [
     {
+        "title": "Sprinting to Failure",
+        "date": "3 APR 2026",
+        "tags": "Robotics, Productivity, Social",
+        "description": "Be more like kindergarteners and less like business students.",
+        "text": `Recently took a robot making class and the prof shared a TED talk about how kindergarteners performed better than lawyers and business students on a spaghetti tower making challenge (is it less offensive if I say no offense?). Basically, instead of jockeying for power and debating on the theoretical best approach before touching the spaghetti, just try anything, find out what works, and keep iterating.
+    \n\n
+After going for Robomaster Chongqing recently, I realized this was very much true for any task with a goal. Most of the progress came when we were competing; discovering and solving bugs, pushing features on pilots' requests. This gave me a lot ideas and motivation of implementing a weekly practice session. The path to improvement seems clearer now, instead of building from scratch every time, we should  think of ways to maximize uptime of functional robots to pressure test for iterative improvements (also to get the pilots more comfortable on them).
+
+This isn't just about robotics. Recently I was thinking about managing relationships and how the objective is a satisfying relationship, not to maximize the chances of it being preserved, clinging on to any relationship right? I realized almost all of the time, its better just to be honest and verbalize points of disagreement instead of suppressing/tolerating them. Even though sure there's risk, you can fail faster and iterate, potentially coming out the other side closer or knowing if you're just not compatible instead of sugarcoating it and sorting it out later with Sunk-Cost Fallacy and bottled resentment.
+
+[Video: Build a tower, build a team | Tom Wujec](https://youtu.be/H0_yKBitO8M?si=n1Ej9AhUTZz3kXDV)`
+    },
+    {
         "title": "Gym lockers and Functions",
         "date": "12 AUG 2025",
         "tags": "Math",

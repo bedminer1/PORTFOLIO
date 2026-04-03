@@ -8,7 +8,7 @@
 
 	$: currentPath = $page.url.pathname
 	$: textColor = $mode === "dark" ? "text-gray-400" : "text-gray-400"
-	$: highlightedTextColor = $mode === "dark" ? "text-red-400" : "text-red-700"
+	$: highlightedTextColor = $mode === "dark" ? "text-red-500" : "text-red-700"
 	let aboutColor = textColor
 	let notesColor = textColor
 	let projectsColor = textColor
