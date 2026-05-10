@@ -9,9 +9,9 @@
 
 export const notes  = [
     {
-        "title": "Sprinting to Failure",
+        "title": "RMUL Chongqing 2026",
         "date": "3 APR 2026",
-        "tags": "Robotics, Productivity, Social",
+        "tags": "Robomaster",
         "description": "Be more like kindergarteners and less like business students.",
         "text": `Recently took a robot making class and the prof shared a TED talk about how kindergarteners performed better than lawyers and business students on a spaghetti tower making challenge (is it less offensive if I say no offense?). Basically, instead of jockeying for power and debating on the theoretical best approach before touching the spaghetti, just try anything, find out what works, and keep iterating.
     \n\n
@@ -20,11 +20,25 @@ After going for Robomaster Chongqing recently, I realized this was very much tru
 This isn't just about robotics. Recently I was thinking about managing relationships and how the objective is a satisfying relationship, not to maximize the chances of it being preserved, clinging on to any relationship right? I realized almost all of the time, its better just to be honest and verbalize points of disagreement instead of suppressing/tolerating them. Even though sure there's risk, you can fail faster and iterate, potentially coming out the other side closer or knowing if you're just not compatible instead of sugarcoating it and sorting it out later with Sunk-Cost Fallacy and bottled resentment.
 
 [Video: Build a tower, build a team | Tom Wujec](https://youtu.be/H0_yKBitO8M?si=n1Ej9AhUTZz3kXDV)`
+	},
+	{
+        "title": "DarkNUS W",
+        "date": "8 FEB 2026",
+        "tags": "Robomaster",
+        "description": "",
+        "text": ``
+	},
+	{
+        "title": "Sumobot L",
+        "date": "15 OCT 2025",
+        "tags": "",
+        "description": "",
+        "text": ``
     },
     {
         "title": "Gym lockers and Functions",
         "date": "12 AUG 2025",
-        "tags": "Math",
+        "tags": "Archived, Math",
         "description": "Injective — everyone has their own locker. Surjective — all lockers are used. Bijective — both injective and surjective.",
         "text": `Imagine a gym with gym-goers and lockers. A spreadsheet contains information about who is assigned which locker. This can be thought of as a function, taking the name of the person as an input, then the locker they are assigned to as an output. 
 
@@ -39,9 +53,9 @@ A **bijective** assignment is both injective and surjective — every gym-goer h
 For a function to be **invertible**, it must be bijective. If we wanted to reverse the spreadsheet to look up a locker ID and get the gym-goer’s name, each locker would need to be assigned to exactly one person (original function being injective ensures one locker to many users mapping), and every locker would need to be in use (surjective ensures full coverage of inverse function's domain).`
     },
     {
-        "title": "Scheduling Dopamine",
+        "title": "Delayed Dopamine",
         "date": "30 JUN 2025",
-        "tags": "Productivity",
+        "tags": "Archived, Productivity",
         "description": "Schedule dopamine indulging activites in the evening, lock in during mornings and afternoons.",
         "text": `After testing out the methods in [Delayed Gratification](/notes/Actually%20Stop%20Doomscrolling), I realized to actually get things done, it's less about the "type" of dopamine and more about the timing.
 
@@ -77,7 +91,7 @@ Reference: ["how to unf*ck your mind so that hard things become easy"(video)]( h
     {
         "title": "Naval vs Recreational Diving",
         "date": "19 APR 2025",
-        "tags": "",
+        "tags": "Archived",
         "description": "Reflections on relearning efficient air consumption after transitioning from military to recreational diving, with practical tips for doubling bottom time.",
         "text": `170 bars of pressurized air consumed in 35minutes, while my buddy had 100 left. It was my first recreational dive ~1.5 years since I last dived in the Navy. But because of me, my buddy missed out on almost half the dive he paid for. 
 
@@ -181,7 +195,7 @@ This website is my own attempt at being a knowledge broker—a library of ideas,
     {
         "title": "Building Systems, Not Goals",
         "date": "5 MAR 2025",
-        "tags": "",
+        "tags": "Archived",
         "description": "Why systems, identity, and showing up matter more than goals — and how habit design compounds into real progress.",
         "text": `**Systems**
 Goals define where you want to go (like a compass), but systems determine whether you get there. Instead of obsessing over the end result, focus on the processes that drive consistent progress. A basketball coach doesn’t win championships by fixating on the trophy but by implementing the right training drills, strategies, and player development. Success is a byproduct of well-designed systems.

@@ -18,23 +18,8 @@ export const projects: Project[] = [
 		link: "",
 	},
 	{
-		title: "Sumobot",
-		description: `Autonomous sumo robot competing in standardized weight classes. Focused on sensor fusion, edge detection, and aggressive push strategies with PID-controlled drive.`,
-		link: "",
-	},
-	{
 		title: "Bridge Club",
 		description: `A CLI-based bridge club management system built in C++. Handles member registration, session scheduling, and game result tracking for the Singapore Bridge Club community.`,
-		link: "",
-	},
-	{
-		title: "Bastion",
-		description: `Barrier placement optimizer for balancing security, cost, and traffic impact at events like the National Day Parade. Includes a robot with camera module for OCR-based event monitoring.`,
-		link: "https://github.com/ViincentLim/path-hero",
-	},
-	{
-		title: "Excalibur",
-		description: `Competition battle robot for RoboMaster RMUL. Firmware handling referee system communication, state machines, motor control, and CAN bus coordination on STM32 microcontrollers.`,
 		link: "",
 	},
 ]
