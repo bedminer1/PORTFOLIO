@@ -1,98 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
- 
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
- 
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
- 
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
- 
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
- 
-    --primary: 240 5.9% 10%;
-    --primary-foreground: 0 0% 98%;
- 
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
- 
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
- 
-    --destructive: 0 72.2% 50.6%;
-    --destructive-foreground: 0 0% 98%;
- 
-    --ring: 240 10% 3.9%;
- 
+    /* Catppuccin Latte */
+    --background: 220 23% 95%;
+    --foreground: 234 16% 35%;
+
+    --muted: 220 13% 91%;
+    --muted-foreground: 233 10% 47%;
+
+    --popover: 220 23% 95%;
+    --popover-foreground: 234 16% 35%;
+
+    --card: 220 23% 95%;
+    --card-foreground: 234 16% 35%;
+
+    --border: 223 16% 83%;
+    --input: 223 16% 83%;
+
+    --primary: 234 16% 35%;
+    --primary-foreground: 220 23% 95%;
+
+    --secondary: 220 13% 91%;
+    --secondary-foreground: 234 16% 35%;
+
+    --accent: 347 87% 44%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 347 87% 44%;
+    --destructive-foreground: 0 0% 100%;
+
+    --ring: 234 16% 35%;
+
     --radius: 0.5rem;
   }
- 
+
   .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
- 
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
- 
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
- 
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
- 
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
- 
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
- 
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
- 
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
- 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
- 
-    --ring: 240 4.9% 83.9%;
+    /* Catppuccin Mocha */
+    --background: 240 21% 15%;
+    --foreground: 226 64% 88%;
+
+    --muted: 240 21% 12%;
+    --muted-foreground: 228 24% 72%;
+
+    --popover: 240 21% 15%;
+    --popover-foreground: 226 64% 88%;
+
+    --card: 240 21% 15%;
+    --card-foreground: 226 64% 88%;
+
+    --border: 237 16% 23%;
+    --input: 237 16% 23%;
+
+    --primary: 226 64% 88%;
+    --primary-foreground: 240 21% 15%;
+
+    --secondary: 240 21% 12%;
+    --secondary-foreground: 226 64% 88%;
+
+    --accent: 351 74% 73%;
+    --accent-foreground: 226 64% 88%;
+
+    --destructive: 351 74% 73%;
+    --destructive-foreground: 226 64% 88%;
+
+    --ring: 226 64% 88%;
   }
 }
- 
+
 @layer base {
   * {
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
-  }
-  :root {
-    --font-anthropic: "Instrument Serif", serif;
-    --font-anthropic-sans: "Inter", sans-serif;
-  }
-}
-
-@layer utilities {
-  .font-anthropic {
-    font-family: var(--font-anthropic);
-    letter-spacing: 0.02em; 
-    font-weight: 400;
-  }
-  .font-anthropic-2 {
-    font-family: var(--font-anthropic-sans);
-    letter-spacing: -0.011em; /* Inter looks better slightly tightened */
-    font-feature-settings: 'cv05', 'cv08', 'ss01'; /* High-quality Inter features */
+    @apply bg-background text-foreground antialiased;
+    font-family: 'JetBrains Mono', monospace;
   }
 }

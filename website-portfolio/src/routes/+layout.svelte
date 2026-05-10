@@ -3,45 +3,73 @@
 	import { ModeWatcher, toggleMode, mode } from 'mode-watcher'
 	import { Toaster } from "$lib/components/ui/sonner";
 	import { Separator } from '$lib/components/ui/separator';
-	import { page } from "$app/stores"
 	import { Sun, Moon } from "lucide-svelte"
+	import { getActiveSection } from '$lib/activeSection.svelte'
 
-	$: currentPath = $page.url.pathname
-	$: textColor = $mode === "dark" ? "text-gray-400" : "text-gray-400"
-	$: highlightedTextColor = $mode === "dark" ? "text-red-500" : "text-red-700"
-	let aboutColor = textColor
-	let notesColor = textColor
-	let projectsColor = textColor
+	/**
+	 * Scroll-spy highlighting.
+	 *
+	 * $derived tracks getActiveSection() through the .svelte.ts boundary
+	 * because it follows the $state reactive graph — unlike $: which only
+	 * tracks top-level variable reads at compile time.
+	 */
+	let current = $derived(getActiveSection())
 
-	$: {
-		if (currentPath === "/") { aboutColor = highlightedTextColor }
-		else { aboutColor = textColor }
-		if (currentPath.substring(0, 6) === "/notes") { notesColor = highlightedTextColor }
-		else { notesColor = textColor }
-		if (currentPath.substring(0, 9) === "/projects") { projectsColor = highlightedTextColor }
-		else { projectsColor = textColor }
+	let aboutColor = $derived(current === 'about'
+		? 'text-ctp-red-light dark:text-ctp-red-dark'
+		: 'text-muted-foreground')
+	let updatesColor = $derived(current === 'updates'
+		? 'text-ctp-red-light dark:text-ctp-red-dark'
+		: 'text-muted-foreground')
+	let projectsColor = $derived(current === 'projects'
+		? 'text-ctp-red-light dark:text-ctp-red-dark'
+		: 'text-muted-foreground')
+
+	/** Smooth-scroll to a section by its DOM id. */
+	function scrollTo(id: string) {
+		const el = document.getElementById(id)
+		if (el) el.scrollIntoView({ behavior: 'smooth' })
 	}
 </script>
 
 <Toaster />
-<ModeWatcher />
-<div class="p-2 mb-4 w-full justify-end flex">
-	<button onclick={toggleMode}>
+<ModeWatcher defaultMode="light" />
+
+<!-- Theme toggle -- fixed top-right, always accessible -->
+<div class="fixed top-4 right-4 z-50">
+	<button onclick={toggleMode} class="opacity-60 hover:opacity-100 transition-opacity">
 		{#if $mode === "light"}
-			<Sun />
+			<Sun size={18} />
 		{:else}
-			<Moon />
+			<Moon size={18} />
 		{/if}
 	</button>
 </div>
-<div class="flex w-full font-serif">
-	<div class="w-1/4 flex flex-col items-center pt-10 italic">
-		<div class="flex flex-col text-right gap-3">
-			<a href="/" class={aboutColor}>about</a>
-			<a href="/notes" class={notesColor}>notes</a>
-			<a href="/projects" class={projectsColor}>projects</a>
+
+<!-- Sidebar nav + main content, side-by-side -->
+<div class="flex min-h-screen max-w-5xl mx-auto px-6">
+	<!-- Sticky sidebar -- vertically centred, tracks scroll-spy -->
+	<nav class="w-28 shrink-0 sticky top-0 self-start h-screen flex flex-col justify-center">
+		<div class="flex flex-col gap-5 text-sm">
+			<button
+				onclick={() => scrollTo('about')}
+				class={aboutColor + ' cursor-pointer bg-transparent border-none italic tracking-wide'}
+			>about</button>
+			<button
+				onclick={() => scrollTo('updates')}
+				class={updatesColor + ' cursor-pointer bg-transparent border-none italic tracking-wide'}
+			>updates</button>
+			<button
+				onclick={() => scrollTo('projects')}
+				class={projectsColor + ' cursor-pointer bg-transparent border-none italic tracking-wide'}
+			>projects</button>
 		</div>
-	</div>
-	<Separator orientation="vertical" />
-	<slot />
-</div>	
+	</nav>
+
+	<Separator orientation="vertical" class="h-auto" />
+
+	<!-- Page content rendered by the router (+page.svelte) -->
+	<main class="flex-1 py-20 pl-10">
+		<slot />
+	</main>
+</div>

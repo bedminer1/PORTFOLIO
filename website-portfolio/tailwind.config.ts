@@ -47,7 +47,13 @@ const config: Config = {
 				card: {
 					DEFAULT: "hsl(var(--card) / <alpha-value>)",
 					foreground: "hsl(var(--card-foreground) / <alpha-value>)"
-				}
+				},
+				ctp: {
+					red: {
+						light: '#d20f39',
+						dark: '#f38ba8',
+					},
+				},
 			},
 			borderRadius: {
 				lg: "var(--radius)",
