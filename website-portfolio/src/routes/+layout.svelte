@@ -29,7 +29,7 @@
 </script>
 
 <Toaster />
-<ModeWatcher defaultMode="light" />
+<ModeWatcher defaultMode="system" />
 
 <HeaderNav />
 
