@@ -33,10 +33,10 @@
 
 <HeaderNav />
 
-<div class="flex min-h-screen max-w-2xl mx-auto">
+<div class="flex min-h-screen justify-center items-center mx-4">
 	<SidebarNav {aboutColor} {updatesColor} {projectsColor} />
 
-	<main class="flex-1 py-20 pl-10">
+	<main class="w-2/3 min-w-1/2 py-20 pl-10">
 		{@render children()}
 	</main>
 </div>

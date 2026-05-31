@@ -9,31 +9,33 @@
 
 export const notes  = [
     {
-        "title": "RMUL Chongqing 2026",
+        "title": "Robomaster League Chongqing 2026",
         "date": "3 APR 2026",
         "tags": "Robomaster",
-        "description": "Be more like kindergarteners and less like business students.",
-        "text": `Recently took a robot making class and the prof shared a TED talk about how kindergarteners performed better than lawyers and business students on a spaghetti tower making challenge (is it less offensive if I say no offense?). Basically, instead of jockeying for power and debating on the theoretical best approach before touching the spaghetti, just try anything, find out what works, and keep iterating.
-    \n\n
-After going for Robomaster Chongqing recently, I realized this was very much true for any task with a goal. Most of the progress came when we were competing; discovering and solving bugs, pushing features on pilots' requests. This gave me a lot ideas and motivation of implementing a weekly practice session. The path to improvement seems clearer now, instead of building from scratch every time, we should  think of ways to maximize uptime of functional robots to pressure test for iterative improvements (also to get the pilots more comfortable on them).
-
-This isn't just about robotics. Recently I was thinking about managing relationships and how the objective is a satisfying relationship, not to maximize the chances of it being preserved, clinging on to any relationship right? I realized almost all of the time, its better just to be honest and verbalize points of disagreement instead of suppressing/tolerating them. Even though sure there's risk, you can fail faster and iterate, potentially coming out the other side closer or knowing if you're just not compatible instead of sugarcoating it and sorting it out later with Sunk-Cost Fallacy and bottled resentment.
-
-[Video: Build a tower, build a team | Tom Wujec](https://youtu.be/H0_yKBitO8M?si=n1Ej9AhUTZz3kXDV)`
+        "description": "",
+		"text": `My first Robomaster competition, developed a hunger to stomp matches. 
+\n\
+		**Takeaways**:
+        1. Automate Tests -> checking manually is slow and not comprehensive
+        2. FOCUS -> keep reflecting if the work you're doing is directly maximally increasing chances of winning`
 	},
 	{
-        "title": "DarkNUS W",
+        "title": "Won a Robomaster comp for new members",
         "date": "8 FEB 2026",
         "tags": "Robomaster",
         "description": "",
-        "text": ``
+		"text": `4 teams of 8-10 in a double elim bracket. Our robot suddenly wasn't moving the day before the competition and we took an early loss because the firmware bugged out. Clutched up in the end though 👍 
+
+		This project taught me that robotics rewards curiosity, keep asking: "how does that work?", you have to understand a bit of everything, control theory, system programming, mechanical engineering, electrical engineering, machine learning etc`
 	},
 	{
-        "title": "Sumobot L",
+        "title": "Sumobot Competition 2025",
         "date": "15 OCT 2025",
         "tags": "",
         "description": "",
-        "text": ``
+		"text": `Participated in a competition where we built lego robots to push other robots out of a circular arena. Stomped the group stages but lost in the quarter finals because we pushed bad code at the last second (= instead of ===). We tested every test case except the one that failed. 
+
+		Wow... don't push code last minute and if you do, test it comprehensively. Did a salty runback and we beat the winners so at least there's a bit of pride left that if we didn't push the bad code we might've won.`
     },
     {
         "title": "Gym lockers and Functions",

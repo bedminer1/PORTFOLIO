@@ -23,9 +23,9 @@
 	}
 </script>
 
-<div class="sticky top-0 self-start h-screen flex flex-col justify-center">
-	<div class="flex items-start mx-2 gap-4">
-		<div class="flex flex-col gap-5 text-sm">
+<div class="sticky top-0 self-start h-[16vh] mt-10 flex flex-col justify-center">
+	<div class="flex items-start h-full mx-2 gap-4">
+		<div class="flex flex-col gap-6 text-sm pt-4">
 			<button
 				onclick={() => scrollTo('about')}
 				class={aboutColor + ' cursor-pointer bg-transparent border-none italic tracking-wide'}

@@ -5,7 +5,8 @@
 	 * Just name, role, and a one-liner. The tip of the iceberg;
 	 * in-depth project details live in the Projects section below.
 	 */
-	import pfp from "$lib/assets/diving_pfp_circle.png"
+	import pfp from "$lib/assets/diving_pfp_circle.png";
+	import Link from "$lib/components/link.svelte";
 </script>
 
 <section id="about" class="scroll-mt-16">
@@ -20,7 +21,7 @@
 	<!-- One-liner bio -- concise, no stack detail dumps -->
 	<div class="max-w-prose text-muted-foreground">
 		<p>
-			I write code for robots at <a class="underline text-ctp-red-light dark:text-ctp-red-dark" target="_blank" href="https://www.nusrobomaster.com/">Calibur Robotics</a>.
+			I write code for robots at <Link label="Calibur Robotics" url="https://www.nusrobomaster.com/"/>.
 			This website is mostly to share devlogs for my robotics projects.
 		</p>
 	</div>
