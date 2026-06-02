@@ -11,7 +11,7 @@ export const notes = [
     {
         "title": "Joined Calibur Comp Team",
         "date": "30 APR 2026",
-        "tags": "",
+        "tags": "Robomaster",
         "description": "",
         "text": `To have more internal scrims, we split our (already not so big) team into 2 -> a main team and a competitive team. 2 people on the new competitive firmware team, have to no life it.`
     },
