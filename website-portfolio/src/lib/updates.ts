@@ -7,13 +7,20 @@
 //         "text": ``
 //     },
 
-export const notes  = [
+export const notes = [
+    {
+        "title": "Joined Calibur Comp Team",
+        "date": "30 APR 2026",
+        "tags": "",
+        "description": "",
+        "text": `To have more internal scrims, we split our (already not so big) team into 2 -> a main team and a competitive team. 2 people on the new competitive firmware team, have to no life it.`
+    },
     {
         "title": "Robomaster League Chongqing 2026",
         "date": "3 APR 2026",
         "tags": "Robomaster",
         "description": "",
-		"text": `My first Robomaster competition, developed a hunger to stomp matches. 
+		"text": `My first Robomaster competition, learnt a lot and we'll come back 10x stronger next year. 
 \n\
 		**Takeaways**:
         1. Automate Tests -> checking manually is slow and not comprehensive

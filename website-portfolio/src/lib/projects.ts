@@ -13,13 +13,18 @@ export interface Project {
 
 export const projects: Project[] = [
 	{
+		title: "Calibur Telemetry System",
+		description: "So annoying to manually check if we break any of the hundreds of rules any time we tune the robot, made this to automate the process. Basically it just gives commands and reads the sensor readings to check if it behaves as expected, logs all the results into a csv file and highlights failed tests.",
+		link: "",
+	},
+	{
 		title: "Oak Golem",
-		description: `A custom SO-ARM101 robotic arm for teleoperation and robotics research. Built on Rust firmware with ESP32-C6 controllers, PCNT encoders, and WS2812 status indicators. Integrated with LeRobot for data collection and policy learning pipelines.`,
+		description: `Lazy to sort my own workspace, screws and wires and tools everywhere. Built this `,
 		link: "",
 	},
 	{
 		title: "Bridge Club",
-		description: `A CLI-based bridge club management system built in C++. Handles member registration, session scheduling, and game result tracking for the Singapore Bridge Club community.`,
-		link: "",
+		description: `Multiplayer Singapore Bridge with elo and leaderboards. `,
+		link: "https://bridge-club.vercel.app/",
 	},
 ]
