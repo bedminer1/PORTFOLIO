@@ -22,7 +22,7 @@
 	<div class="max-w-prose text-muted-foreground">
 		<p>
 			I write code for robots at <Link label="Calibur Robotics" url="https://www.nusrobomaster.com/"/>.
-			This website is mostly to share devlogs for my robotics projects. My inspirations include <Link label="Cubic Meter" url="https://www.youtube.com/watch?v=q78LRgHt_zU" /> and <Link label="Draedon from Terraria Calamity" url="https://calamitymod.wiki.gg/wiki/Exo_Mechs" />.
+			This website is mostly to share devlogs for my robotics projects. My inspirations include <Link label="cubicmetre" url="https://www.youtube.com/watch?v=q78LRgHt_zU" /> and <Link label="Draedon" url="https://calamitymod.wiki.gg/wiki/Exo_Mechs" />.
 		</p>
 	</div>
 </section>
