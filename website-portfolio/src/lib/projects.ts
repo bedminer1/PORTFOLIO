@@ -25,6 +25,6 @@ export const projects: Project[] = [
 	{
 		title: "Bridge Club",
 		description: `Multiplayer Singapore Bridge with elo and leaderboards. `,
-		link: "https://bridge-club.vercel.app/",
+		link: "https://bridge-club.duckdns.org",
 	},
 ]
