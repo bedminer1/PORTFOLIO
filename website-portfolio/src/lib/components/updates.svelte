@@ -9,6 +9,7 @@
 	import { notes as updates } from "$lib/updates"
 	import { marked } from "marked"
 	import { Badge } from "$lib/components/ui/badge/index.js"
+    import Separator from "./ui/separator/separator.svelte";
 
 	/**
 	 * Map of note-title → expanded-state.
@@ -97,6 +98,7 @@
 				<!-- Full body rendered from markdown -->
 				<div class="[&_code]:text-sm">
 					{@html parse(note.text)}
+					<Separator class="mt-4 w-1/4" />
 				</div>
 			</div>
 			{/if}

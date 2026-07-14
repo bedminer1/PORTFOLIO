@@ -9,6 +9,7 @@
     /* Catppuccin Latte */
     --background: 220 23% 95%;
     --foreground: 234 16% 35%;
+    --subtle-foreground: 233 12% 42%;
 
     --muted: 220 13% 91%;
     --muted-foreground: 233 10% 47%;
@@ -40,35 +41,36 @@
   }
 
   .dark {
-    /* Catppuccin Mocha */
-    --background: 240 21% 15%;
-    --foreground: 226 64% 88%;
+    /* Monochrome Void */
+    --background: 0 0% 2%;
+    --foreground: 0 0% 93%;
+    --subtle-foreground: 0 0% 82%;
 
-    --muted: 240 21% 12%;
-    --muted-foreground: 228 24% 72%;
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 60%;
 
-    --popover: 240 21% 15%;
-    --popover-foreground: 226 64% 88%;
+    --popover: 0 0% 2%;
+    --popover-foreground: 0 0% 83%;
 
-    --card: 240 21% 15%;
-    --card-foreground: 226 64% 88%;
+    --card: 0 0% 2%;
+    --card-foreground: 0 0% 83%;
 
-    --border: 237 16% 23%;
-    --input: 237 16% 23%;
+    --border: 0 0% 12%;
+    --input: 0 0% 12%;
 
-    --primary: 226 64% 88%;
-    --primary-foreground: 240 21% 15%;
+    --primary: 0 0% 83%;
+    --primary-foreground: 0 0% 2%;
 
-    --secondary: 240 21% 12%;
-    --secondary-foreground: 226 64% 88%;
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 0% 83%;
 
-    --accent: 351 74% 73%;
-    --accent-foreground: 226 64% 88%;
+    --accent: 0 0% 95%;
+    --accent-foreground: 0 0% 2%;
 
-    --destructive: 351 74% 73%;
-    --destructive-foreground: 226 64% 88%;
+    --destructive: 0 0% 55%;
+    --destructive-foreground: 0 0% 2%;
 
-    --ring: 226 64% 88%;
+    --ring: 0 0% 83%;
   }
 }
 

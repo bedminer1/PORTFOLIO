@@ -13,7 +13,9 @@ export const notes = [
         "date": "30 APR 2026",
         "tags": "Robomaster",
         "description": "",
-        "text": `To have more internal scrims, we split our (already not so big) team into 2 -> a main team and a competitive team. 2 people on the new competitive firmware team, have to no life it.`
+		"text": `To keep us more focused on winning, we split our (already not so big) team into 2 -> a main team and a competitive team. 
+
+		We will have an internal competition to decide who gets to represent NUS at competitions and the competitive team will be kicked if we lose + there's a 1.5x damage multiplier advantage for the main team. Will be a fun challenge, especially with 10x less members.`
     },
     {
         "title": "Robomaster League Chongqing 2026",
@@ -24,7 +26,9 @@ export const notes = [
 \n\
 		**Takeaways**:
         1. Automate Tests -> checking manually is slow and not comprehensive
-        2. FOCUS -> keep reflecting if the work you're doing is directly maximally increasing chances of winning`
+        2. FOCUS -> keep reflecting if the work you're doing is directly maximally increasing chances of winning
+
+        [小红书 post](http://xhslink.com/o/1W4KRiFrCtB)`
 	},
 	{
         "title": "Won a Robomaster comp for new members",
@@ -42,7 +46,9 @@ export const notes = [
         "description": "",
 		"text": `Participated in a competition where we built lego robots to push other robots out of a circular arena. Stomped the group stages but lost in the quarter finals because we pushed bad code at the last second (= instead of ===). We tested every test case except the one that failed. 
 
-		Wow... don't push code last minute and if you do, test it comprehensively. Did a salty runback and we beat the winners so at least there's a bit of pride left that if we didn't push the bad code we might've won.`
+		Wow... don't push code last minute and if you do, test it comprehensively. Did a salty runback and we beat the winners so at least there's a bit of pride left that if we didn't push the bad code we might've won.
+
+		[小红书 post](http://xhslink.com/o/7sNd9w3nMeZ)`
     },
     {
         "title": "Gym lockers and Functions",

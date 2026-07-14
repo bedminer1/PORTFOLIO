@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte'
 	import { setActiveSection } from "$lib/activeSection.svelte"
 	import About from "$lib/components/about.svelte"
-	import Updates from "$lib/components/updates.svelte"
+	import Updates from "$lib/components/updates.svelte";
 	import Projects from "$lib/components/projects.svelte"
 
 	/**
@@ -17,8 +17,9 @@
 	 */
 	onMount(() => {
 		function onScroll() {
-			/** Scroll position + header offset to account for scroll-mt-16 */
-			const scrollY = window.scrollY + 80
+			/** 30 % of viewport height — section activates when its top edge
+			 *  reaches this point, giving earlier feedback as the user scrolls. */
+			const scrollY = window.scrollY + window.innerHeight * 0.3
 
 			/** Walk sections top-to-bottom; the last one whose offsetTop is
 			 *  above scrollY is the one the user is currently reading. */

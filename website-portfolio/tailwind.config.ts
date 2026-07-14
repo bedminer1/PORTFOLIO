@@ -32,7 +32,11 @@ const config: Config = {
 					DEFAULT: "hsl(var(--destructive) / <alpha-value>)",
 					foreground: "hsl(var(--destructive-foreground) / <alpha-value>)"
 				},
-				muted: {
+				subtle: {
+					DEFAULT: "hsl(var(--subtle-foreground) / <alpha-value>)",
+					foreground: "hsl(var(--subtle-foreground) / <alpha-value>)"
+				},
+			muted: {
 					DEFAULT: "hsl(var(--muted) / <alpha-value>)",
 					foreground: "hsl(var(--muted-foreground) / <alpha-value>)"
 				},
@@ -48,12 +52,12 @@ const config: Config = {
 					DEFAULT: "hsl(var(--card) / <alpha-value>)",
 					foreground: "hsl(var(--card-foreground) / <alpha-value>)"
 				},
-				ctp: {
-					red: {
-						light: '#d20f39',
-						dark: '#f38ba8',
-					},
+			ctp: {
+				red: {
+					light: '#d20f39',
+					dark: '#ffffff',
 				},
+			},
 			},
 			borderRadius: {
 				lg: "var(--radius)",

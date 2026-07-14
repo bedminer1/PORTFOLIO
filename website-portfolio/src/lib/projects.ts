@@ -1,30 +1,38 @@
 /**
  * Projects data.
  *
- * Each project has a title, markdown-ish description, and optional source link.
- * Import into components with `import { projects } from "$lib/projects"`.
+ * Each project has a title, markdown-ish description, optional source link,
+ * and a slug that routes to /projects/<slug> for the devlog detail page.
  */
 
 export interface Project {
-	title: string
-	description: string
-	link: string
+	title: string;
+	description: string;
+	link: string;
+	slug: string;
 }
 
 export const projects: Project[] = [
 	{
-		title: "Calibur Telemetry System",
-		description: "So annoying to manually check if we break any of the hundreds of rules any time we tune the robot, made this to automate the process. Basically it just gives commands and reads the sensor readings to check if it behaves as expected, logs all the results into a csv file and highlights failed tests.",
+		title: "Calibur Firmware",
+		slug: "calibur",
+		description: `I work mostly on the firing of the robots, going deep into Control Theory and latency optimizations to try to make a completely cracked and unfair aimbot. 
+		<br/><br/>
+		Mostly doing research work to improve the tuning process and the shooting- related decision making of the robot.`,
 		link: "",
 	},
-	{
-		title: "Oak Golem",
-		description: `Lazy to sort my own workspace, screws and wires and tools everywhere. Built this `,
-		link: "",
-	},
+	// {
+	// 	title: "Proper Golem",
+	// 	slug: "proper-golem",
+	// 	description: `A workshop robot built on top of the lekiwi by Lerobot. Building it to help with picking up bullets/reloading my robomaster robots and doing some camera work to record scrims/internal testing. 
+	// 	<br/><br/>
+	// 	Name inspired by Copper Golems from Minecraft, sorting stuff and keep things neat and proper.`,
+	// 	link: "https://properrobotics.org",
+	// },
 	{
 		title: "Bridge Club",
-		description: `Multiplayer Singapore Bridge with elo and leaderboards. `,
-		link: "https://bridge-club.duckdns.org",
+		slug: "bridge-club",
+		description: `Originally wanted to focus on multiplayer to play with friends, but its hard to recreate the subtle bluffing/social aspects. Project focus now is getting the bots as smart as possible, inspired by poker bots and trading bots. Maybe the 'Club' part of the name is a bit outdated.. `,
+		link: "https://bridge-club.properrobotics.org",
 	},
-]
+];

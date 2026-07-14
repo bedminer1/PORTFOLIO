@@ -2,19 +2,12 @@
 	import '../app.css'
 	import { ModeWatcher } from 'mode-watcher'
 	import { Toaster } from "$lib/components/ui/sonner";
-	import { getActiveSection } from '$lib/activeSection.svelte'
+	import { getActiveSection } from "$lib/activeSection.svelte";
 	import HeaderNav from '$lib/components/header-nav.svelte'
-	import SidebarNav from '$lib/components/sidebar-nav.svelte'
+	import MobileNav from '$lib/components/mobile-nav.svelte'
 
-	/** Receive the child page content as a snippet (Svelte 5). */
 	let { children } = $props()
 
-	/**
-	 * Scroll-spy highlighting — derived from the shared $state rune.
-	 *
-	 * $derived tracks getActiveSection() through the .svelte.ts boundary
-	 * because it follows the $state reactive graph at runtime.
-	 */
 	let current = $derived(getActiveSection())
 
 	let aboutColor = $derived(current === 'about'
@@ -34,9 +27,8 @@
 <HeaderNav />
 
 <div class="flex min-h-screen justify-center items-center mx-4">
-	<SidebarNav {aboutColor} {updatesColor} {projectsColor} />
-
-	<main class="w-2/3 min-w-1/2 py-20 pl-10">
+	<MobileNav {aboutColor} {updatesColor} {projectsColor} />
+	<main class="w-2/3 min-w-1/2 py-20 pl-0 md:pl-10">
 		{@render children()}
 	</main>
 </div>
